@@ -1,8 +1,8 @@
 ---
-layout: post
-title:  "考研进行时"
-date:   2013-12-17 12:56:06
-categories: jekyll update
+layout: post
+title: "考研进行时"
+date: 2013-12-17 12:56:06
+categories: my journal
 ---
 
 今天是17号，还有13天2013年就要画上句号了，考研也要到最终的冲刺了。
