@@ -1,4 +1,13 @@
-﻿#Eclipse下配置Struts2
+﻿---
+layout: post
+title: "Eclipse下配置Struts2"
+description: "struts2在eclipse下的配置"
+category: 'diary'
+tags: [Struts2,Eclipse,Java]
+---
+{% include JB/setup %}
+
+#Eclipse下配置Struts2
 
 前几天一直把玩Struts2，折腾来折腾去，最后终于配置好了我的第一个Struts2项目之HelloWorld!
 
