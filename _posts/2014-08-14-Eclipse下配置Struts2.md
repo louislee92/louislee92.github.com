@@ -7,6 +7,7 @@ tags: [Struts2,Eclipse,Java]
 ---
 {% include JB/setup %}
 
+
 #Eclipse下配置Struts2
 
 前几天一直把玩Struts2，折腾来折腾去，最后终于配置好了我的第一个Struts2项目之HelloWorld!
