@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Eclipse下配置Struts2"
-description: "struts2在eclipse下的配置"
+tagline: "struts2在eclipse下的配置"
 category: diary
 tags: [Struts2, Eclipse, Java]
 ---
