@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Eclipse下配置Struts2"
 description: "struts2在eclipse下的配置"
