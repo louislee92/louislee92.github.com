@@ -1,6 +1,6 @@
 body{
 	background: #fff url(../img/bg.jpg) center 0 repeat-y fixed;
-	background-size: 120% 120%;
+	background-size: 120% auto;
 }
 ul li{
   	list-style: none;
