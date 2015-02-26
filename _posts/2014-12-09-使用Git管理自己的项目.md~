@@ -1,0 +1,110 @@
+---
+layout: post
+title:  "使用Git管理自己的项目"
+date:   2014-12-09 17:07:10
+categories: jekyll update
+tags:
+- Git
+---
+##版本控制系统-Git
+---
+版本控制系统就好比银行保险箱。保险箱保管有价值的资产，保证它们的安全。对程序员来讲，源代码就是这样的资产，有版本控制系统来保管。版本控制系统把程序员所完成并提交（commit）的任何修改都记录下来，供日后查询检索。这个功能就好像银行提供的对账单一样。
+
+在Git的世界里，可以随身带着有自动取款机的保险箱到处走。这意味着，你既可以完全断开和别人的连接以独立工作，也可以在适当的时候与大家沟通分享工作成果。当然，Git也具有记录和跟踪代码修改历史这样的基本功能。当初Linus Torvalds创造Git是为了跟踪Linux内核的修改情况。他用几周时间完成了基本的雏形。随着时间的推移，Git已经从最初简陋的脚本发展成为功能丰富的工具包。
+
+##安装Git
+---
+**在不同系统的安装**
+
+- Windows: Download & install [msysgit](http://msysgit.github.io/).
+- Mac: Install it with [Homebrew](http://brew.sh/), [MacPorts](http://www.macports.org/) or [installer](http://code.google.com/p/git-osx-installer/).
+- Linux (Ubuntu, Debian): ***sudo apt-get install git-core***.
+- Linux (Fedora, Red Hat, CentOS): ***sudo yum install git-core***.
+
+**注意事项**
+
+* Windows
+    * Windows下安装mysgit的时候，在***Adjusting your PATH environment***这一步中，有三种选择。一般来说，请选择第二种***Run Git from the Windows***，以便Git可以从Windows命令行环境中直接运行，同时又不会因为添加了额外的设置而给Windows命令行环境带来潜在的问题。
+    * 不过Linuxer可以根据自己的需要选择第三种***Run Git and included Unix tools from the Windows Command Prompt***，这会覆盖Windows中的一些工具，像find.exe和sort.exe等。
+    * 另外，选择第三种后，你会发现在Windows命令行中运行Linux命令时候，中文显示会乱码。解决方法参考[]()。
+
+##设置Git
+---
+安装之后，首先要设置***user.name***和***user.email***两个全局变量值。第一个值用来说明版本历史上的一个修改是谁提交的。第二个值是邮件地址，以方便联系修改者。
+示例如下,当然，实践中你得换成自己的名字：
+
+    $ git config --global user.name "Your Name"
+    $ git config --global user.email "youname@gmail.com"
+仅这两个全局变量值是必须设置的。但所有可设置的值超过130个。其中大部分都很少用得上。下面列举一些可能常用的设置：
+
+**颜色设置**
+ 
+    $ git config --global color.ui "auto"    
+建议mysgit用户把该值设为“always”而非“auto”，这样不仅在Bash环境中是彩色的，在Windows命令行环境中也是彩色的。
+
+**编辑器设置**
+
+    $ git config --global core.editor "vim"
+像***commit***和***tag***这样的命令在执行的时候会打开默认的编辑器提供编辑功能，而编辑器设置的顺序是***$GIT_EDITOR***环境变量，然后是***core.editor***设置，接着是***$VISUAL***，然后***$EDITOR***，最后是在编译时候的默认选择***vi***（其中像$GIT_EDITOR这样的环境变量是用***git var***命令来设置的，详情请看其他设置）。而vi的编辑方式对于Winer们来说太过繁琐，似乎渐渐被高效的vim取缔了，所以我们通常使用的编辑器变成了vim。当然，你也可以设置其他的编辑器。
+
+
+**其他设置**
+
+如果在本机中安了Git文档，则可通过运行命令***git help config***列出所有设置变量值，也可以访问[git设置文档](http://www.kernel.org/pub/software/scm/git/docs/git-config.html#_varibles)。可通过运行命令***git help var***列出所有环境变量值，也可以访问[git环境变量设置文档](http://www.kernel.org/pub/software/scm/git/docs/git-var.html)
+
+
+
+## 创建项目
+---
+
+**本地版本库的创建**
+
+创建一个新项目，并命名为***mysite***。首先创建一个同名目录“mysite”，并进入该目录，然后输入命令git init。过程如下：
+
+    $ mkdir mysite
+    $ cd mysite
+    $ git init
+    Initialized empty Git repository in /mysite/.git/
+    
+创建完成。从现在开始，这个Git版本库就可以用来记录和跟踪该项目的代码了。
+
+**远程版本库与本地版本库的链接**
+
+此时这个版本库还没有被***push***（推入）到Github上，所以只能进行本地版本库的跟踪和修改。当然，如果你是个人开发并且不会上传或开源到Github上的话，git完全会满足你的需求。但是，若是这个项目是由多个人合作或者你想对其进行开源开发的话，这时候你就要考虑注册一个Github账号了。
+
+假定你已经有了一个Github账号，并且已经新建了一个名为***mysite***的repository（代码仓库）。这时，你可以接上上一个步骤，然后将本地的版本库与远程版本库进行一个连接。给远程版本库取名***origin***，并其值设置为mysite的url:***https://github.com/YOURNAME/mysite***。
+    
+    $ git remote add origin https://github.com/YOUNAME/mysite
+   
+
+或者，直接忽略上一个步骤，直接克隆你新建的远程版本库***mysite***到本地。
+
+    $ git clone https://github.com/YOURNAME/mysite 
+    
+然后你会发现当前目录下有一个已经初始化并与远程版本库连接的本地版本库。
+
+**对本地分支进行修改并推入到远程版本库**
+
+进入本地分支***mysite***，然后可以对此目录进行添加或者修改文件，接着对修改后的文件进行添加并提交，最后推入到远程版本库。过程如下：
+
+    $ cd /mysite
+    ...                                    #修改
+    $ git add *                            #添加所有修改到索引（index）区
+    $ git commit -m "代码提交信息"           #提交修改信息到HEAD区  
+    $ git push origin master               #把所有提交推入到远程版本库
+    
+
+## git工作流程
+---
+你的本地仓库由 git 维护的三棵“树”组成。第一个是你的工作目录，它持有实际文件；第二个是缓存区（Index），它像个缓存区域，临时保存你的改动；最后是 HEAD，指向你最近一次提交后的结果。
+
+![工作流程](../_images/trees.png)
+
+
+## 链接与资源
+
+
+* [Git 使用简易指南](http://www.bootcss.com/p/git-guide/)
+* [Git 分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html) 
+* [Git 官方文档【英文版】](http://git-scm.com/doc)
+* [Git 使用说明书【英文版】【PDF】](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
