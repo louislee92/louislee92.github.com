@@ -17,6 +17,18 @@
     margin-bottom: 0;
     float: left;
 
+    // @Louis Lee add background , width and height 2015/03/21
+    // START
+    background-image: url(img/logo.png);
+    bakcground-repeat: no-repeat;
+    width: 168px;
+    height: 56px;
+    
+    &:hover {
+        background-image: url(img/logo-hover.png);
+    }
+    // END
+
     &,
     &:visited {
         color: $grey-color-dark;
