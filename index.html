@@ -1,23 +1,136 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Louis Lee</title>
+	<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+	<style type="text/css">
+	/* main */
+	html, body {
+		padding: 0px;
+		margin: 0px;
+		height: 100%;
+	}
+	body {
+		background: -moz-linear-gradient(top, #eff6fb, #d3e4f3);
+		background: -webkit-linear-gradient(top, #eff6fb, #d3e4f3);
+		background: -o-linear-gradient(top, #eff6fb, #d3e4f3);
+	}
+	.photo_img {
+		max-width: 150px;
+		border: 5px solid rgba(255,255,255,0.1);
+	}
+	.photo_img:hover {
+		border: 5px solid rgba(255,255,255,0.5);
+	}
+	.photo_name {
+		color: #fefefe;
+		font-family: "Microsoft YaHei";
+		font-size: 30px;
+	}
+	.tips {
+		background: rgba(255,255,255,0.5);
+		font-family: "Microsoft YaHei";
+		text-align: center;
+		border-radius: 5px;
+	}
+	.text-center {
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<div id="banner" data-href="img/1.jpg" data-sharpness="80" data-offsetx="0">
+		<div class="photo">
+			<img class="photo_img" src="img/photo.jpg">
+			<p class="photo_name">Louis Lee</p>
+		</div>
+		<div class="tips" hidden>
+			Hello There<br>
+			This is Louis Lee's Home Page<br>
+			Welcome!
+		</div>
+	</div>
+	<div id="logos">
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.blurr.min.js"></script>
+	<script type="text/javascript">
 
-<div class="home">
+		// 数据对象
+		var logo_data = [{"name": "微博","src": "img/weibo.jpg", "url": "http://weibo.com/louislee2013"},
+						 {"name": "github", "src": "img/github.png", "url": "https://github.com/louislee92"},
+						 {"name": "twitter", "src": "img/twitter.jpg", "url": "https://twitter.com/louislee92"},
+						 {"name": "facebook", "src": "img/facebook.jpg", "url": "http://www.facebook.com/louislee92"},
+						 {"name": "QQ空间", "src": "img/zone.jpg", "url": "http://user.qzone.qq.com/466739076"},
+						 {"name": "CSDN博客", "src": "img/csdn.jpg", "url": "http://blog.csdn.net/louislee92"}];
 
-  <h1 class="page-heading">Posts</h1>
+		// logo的宽度设置
+		var logo_style_width = "10%";
+		var logo_style_max_width = "50px";
+		var logo_style_min_width = "20px";
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		$(document).ready(function(){
+			// 获取dom元素
+			var $body = $("body");
+			var $banner = $("#banner");					
+			var $photo = $(".photo");
+			var $photo_img = $(".photo img");
+			var $photo_name = $(".photo p");
+			var $logos = $("#logos");
+			var $tips = $(".tips");
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+			// 使用插件中的blurr方法，使banner背景模糊化
+			$banner.blurr();
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+			// 插件作用DOM后，DOM元素的属性变化，所以要在插件作用后获取元素的高度
+			var banner_height = $banner.height();
+			var photo_height = $photo.height();
+			var photo_width = $photo.width();
+			var photo_img_height = $photo_img.height();
 
-</div>
+			console.log("banner_height="+banner_height+", photo_height="+ photo_height+ ", photo_img_height=" + photo_img_height+"#photo_width="+photo_width);
+
+			// 设置tips位置和样式
+			if((photo_width - photo_img_height) / 2 > 280){
+				var width = 250;
+				var photo_half = (photo_width - photo_img_height) / 2;
+				var top = (banner_height - photo_height + photo_img_height) / 2;
+				var left = photo_half - width - 30;
+				$tips.css({"width": width + "px", "padding": "5px", "top": top + "px", "left": left + "px"});
+			}else{
+				var width = photo_width - 10;
+				var bottom = (banner_height - photo_height ) / 2;
+				$tips.css({"width": width + "px", "padding": "5px", "bottom": bottom + "px", "margin": "0 auto"});
+			}
+			// 设置头像区域样式
+			$photo_img.css({"border-radius" : (photo_img_height / 2) + "px"});
+			$photo_img.hover(function(){
+				$tips.fadeIn("slow");
+			}, function(){
+				$tips.fadeOut("slow");
+			});
+			$photo.css({"text-align": "center", "top": (0 - photo_height) + "px"});
+			$photo_name.css({"display": "none"});
+
+
+			// 添加logos
+			$logos.css({"text-align": "center", "display": "none"});
+			for(var i = 0; i < logo_data.length; i++){
+				$logos.append("<div style='margin: 5px; max-width: "+logo_style_max_width+"; min-width: "+logo_style_min_width+"; width: "+logo_style_width+"; display: inline-block;'><a target='_blank' href='"+logo_data[i].url+"'><img title='"+logo_data[i].name+"' style='width: 100%;' src='"+logo_data[i].src+"'></a><div>");
+			}
+
+			// 添加动画
+			$photo.animate({"top": ((banner_height - photo_height) / 2) + "px"}, 1000, function(){
+				$photo_name.show("slow", function(){
+					$logos.show("slow");
+				});
+			});
+
+			// 为body添加背景色
+		});
+
+	</script>
+</body>
+</html>
