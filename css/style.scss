@@ -1,0 +1,87 @@
+﻿/* code snippet */
+@mixin flex($direction: row, $wrap: wrap, $justify: space-around, $alignItems: center){
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	flex-flow: $direction $wrap;
+	justify-content: $justify;
+	align-items: $alignItems;
+}
+
+@mixin borderRadius($radius: 5px){
+	border-radius: $radius;
+}
+
+$color-朱砂: #ff461f;
+$color-火红: #ff2d51;
+$color-殷虹: #be002f;
+$color-漆黑: #161823;
+
+$color-bg: #EBEBEB;
+$color-block: #FFF;
+
+@mixin aStyle{
+	text-decoration: none;
+	font-family: "Microsoft YaHei";
+	color: $color-漆黑;
+}
+
+/* main */
+html, body, input, button {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	@include flex(column, nowrap, flex-start, flex-start);
+	background: $color-bg;
+}
+
+/* common */
+.grid {
+	@include flex(row, wrap, flex-start, flex-start);
+}
+.grid-center{
+	@include flex(row, wrap, space-around, flex-start);
+}
+
+.border-img {
+	border: 2px solid rgba(0,0,0,0.1);
+}
+.border-img:hover {
+	border: 2px solid rgba(0,0,0,0.2);
+}
+
+/* index */
+body>div{
+	width: 90%;
+	@include flex(column, nowrap, flex-start, flex-start);
+	background: $color-block;
+	padding: 15px;
+	margin: 5px auto;
+}
+
+/* header */
+#header {
+	@include flex(row, nowrap, flex-start, center);
+}
+#photo {
+	width: 80px;
+	@include borderRadius(40px);
+}
+
+
+/* content */
+#content .category h4{
+	color: $color-殷虹;
+}
+#content .grid a {
+	@include flex(row, nowrap, flex-start, center);
+	@include aStyle;
+	border: 1px solid rgba(0,0,0,0);
+	padding: 5px;
+}
+#content .grid a img{
+	width: 16px;
+}
+#content .grid a:hover {
+	border: 1px solid $color-殷虹;
+}

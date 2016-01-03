@@ -1,0 +1,88 @@
+/* code snippet */
+/* main */
+html, body, input, button {
+  padding: 0px;
+  margin: 0px; }
+
+body {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #EBEBEB; }
+
+/* common */
+.grid {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+.grid-center {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start; }
+
+.border-img {
+  border: 2px solid rgba(0, 0, 0, 0.1); }
+
+.border-img:hover {
+  border: 2px solid rgba(0, 0, 0, 0.2); }
+
+/* index */
+body > div {
+  width: 90%;
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #FFF;
+  padding: 15px;
+  margin: 5px auto; }
+
+/* header */
+#header {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center; }
+
+#photo {
+  width: 80px;
+  border-radius: 40px; }
+
+/* content */
+#content .category h4 {
+  color: #be002f; }
+
+#content .grid a {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Microsoft YaHei";
+  color: #161823;
+  border: 1px solid transparent;
+  padding: 5px; }
+
+#content .grid a img {
+  width: 16px; }
+
+#content .grid a:hover {
+  border: 1px solid #be002f; }
+
+/*# sourceMappingURL=main.css.map */
