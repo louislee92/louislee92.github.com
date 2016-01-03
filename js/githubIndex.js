@@ -1,16 +1,15 @@
 ﻿
 $(document).ready(function(){
 	// dom elements
-	var $logos = $("#logos");
-	var $bookmarks = $("#content");
 	
 	// append logos
-	//$logos.css({"text-align": "center"});
+	var logos_string = "";
 	for(var i = 0; i < logo_data.length; i++){
-		$logos.append("<div style='margin-left: 5px; max-width: 50px; min-width: 20px;'>"+
+		logos_string += "<div>"+
 					  "<a target='_blank' href='"+logo_data[i].url+"'>"+
-					  "<img title='"+logo_data[i].name+"' style='width: 100%;' src='"+logo_data[i].src+"'></a></div>");
+					  "<img title='"+logo_data[i].name+"' style='width: 100%;' src='"+logo_data[i].src+"'></a></div>";
 	}
+	$("#logos").append(logos_string);
 	console.log(bm_data);
 	// append bookmarks
 	var bookmarks_string = "";

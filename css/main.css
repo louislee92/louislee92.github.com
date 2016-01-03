@@ -1,4 +1,5 @@
 /* code snippet */
+/* varibles */
 /* main */
 html, body, input, button {
   padding: 0px;
@@ -47,7 +48,7 @@ body > div {
   align-items: flex-start;
   background: #FFF;
   padding: 15px;
-  margin: 5px auto; }
+  margin: 0px auto 5px auto; }
 
 /* header */
 #header {
@@ -62,10 +63,15 @@ body > div {
   width: 80px;
   border-radius: 40px; }
 
+#logos > div {
+  margin-left: 5px;
+  max-width: 40px;
+  min-width: 20px; }
+
 /* content */
 #content .category h4 {
   font-family: "Microsoft YaHei";
-  color: #be002f; }
+  color: #666; }
 
 #content .grid a {
   display: -webkit-flex;
@@ -76,7 +82,8 @@ body > div {
   align-items: center;
   text-decoration: none;
   font-family: "Microsoft YaHei";
-  color: #161823;
+  color: #555;
+  border-radius: 5px;
   border: 1px solid transparent;
   padding: 5px; }
 
@@ -84,6 +91,7 @@ body > div {
   width: 16px; }
 
 #content .grid a:hover {
+  color: #be002f;
   border: 1px solid #be002f; }
 
 /*# sourceMappingURL=main.css.map */

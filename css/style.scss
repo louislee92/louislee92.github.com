@@ -11,6 +11,14 @@
 	border-radius: $radius;
 }
 
+
+@mixin aStyle{
+	text-decoration: none;
+	font-family: "Microsoft YaHei";
+	color: $color-font-link;
+}
+
+/* varibles */
 $color-朱砂: #ff461f;
 $color-火红: #ff2d51;
 $color-殷虹: #be002f;
@@ -19,11 +27,8 @@ $color-漆黑: #161823;
 $color-bg: #EBEBEB;
 $color-block: #FFF;
 
-@mixin aStyle{
-	text-decoration: none;
-	font-family: "Microsoft YaHei";
-	color: $color-漆黑;
-}
+$color-font-category: #666;
+$color-font-link: #555;
 
 /* main */
 html, body, input, button {
@@ -56,7 +61,7 @@ body>div{
 	@include flex(column, nowrap, flex-start, flex-start);
 	background: $color-block;
 	padding: 15px;
-	margin: 5px auto;
+	margin: 0px auto 5px auto;
 }
 
 /* header */
@@ -67,16 +72,22 @@ body>div{
 	width: 80px;
 	@include borderRadius(40px);
 }
+#logos > div {
+	margin-left: 5px; 
+	max-width: 40px; 
+	min-width: 20px;
+}
 
 
 /* content */
 #content .category h4{
 	font-family: "Microsoft YaHei";
-	color: $color-殷虹;
+	color: $color-font-category;
 }
 #content .grid a {
 	@include flex(row, nowrap, flex-start, center);
 	@include aStyle;
+	@include borderRadius;
 	border: 1px solid rgba(0,0,0,0);
 	padding: 5px;
 }
@@ -84,5 +95,6 @@ body>div{
 	width: 16px;
 }
 #content .grid a:hover {
+	color: $color-殷虹;
 	border: 1px solid $color-殷虹;
 }
