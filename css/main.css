@@ -64,6 +64,7 @@ body > div {
 
 /* content */
 #content .category h4 {
+  font-family: "Microsoft YaHei";
   color: #be002f; }
 
 #content .grid a {
