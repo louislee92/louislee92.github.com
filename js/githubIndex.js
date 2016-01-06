@@ -1,6 +1,12 @@
 ﻿
 $(document).ready(function(){
-	// dom elements
+	// variables
+	var util = {
+		getFaviconByUrl: function(url){
+			var host = url.split("/")[0];
+			return url + "/favicon.ico";
+		}
+	};
 	
 	// append logos
 	var logos_string = "";
@@ -10,7 +16,8 @@ $(document).ready(function(){
 					  "<img title='"+logo_data[i].name+"' style='width: 100%;' src='"+logo_data[i].src+"'></a></div>";
 	}
 	$("#logos").append(logos_string);
-	console.log(bm_data);
+	//console.log(bm_data);
+	
 	// append bookmarks
 	var bookmarks_string = "";
 	for(var i = 0; i < bm_data.length; i++){
@@ -23,7 +30,8 @@ $(document).ready(function(){
 			if(bm_data[i].bookmarks[j].icon != undefined){
 				bookmarks_string += '<i style="color: green" class="'+bm_data[i].bookmarks[j].icon+'"></i>&nbsp;'+bm_data[i].bookmarks[j].title+'</a>';
 			}else{
-				bookmarks_string += '<img src="'+bm_data[i].bookmarks[j].url+'/favicon.ico"/>&nbsp;'+bm_data[i].bookmarks[j].title+'</a>';
+				var temp = util.getFaviconByUrl(bm_data[i].bookmarks[j].url);
+				bookmarks_string += '<img src="'+temp+'"/>&nbsp;'+bm_data[i].bookmarks[j].title+'</a>';
 			}
 		}
 		bookmarks_string += '</div></div>';

@@ -19,5 +19,15 @@
 {cateName: "程序猿的自留地",
  icon: "fa fa-code",
  bookmarks: [
- ]}
+ ]},
+// 学术大牛
+{cateName: "学术大牛",
+icon: "fa fa-thumbs-up ",
+bookmarks: [
+{title: "Charles Zhang", url: "http://www.cse.ust.hk/~charlesz/"},
+{title: "Xiangyu Zhang", url: "https://www.cs.purdue.edu/homes/xyzhang/"},
+{title: "Yuanfang Cai", url: "https://www.cs.drexel.edu/~yfcai/"},
+{title: "谢涛", url: "http://web.engr.illinois.edu/~taoxie/"},
+{title: "陈振宇", url: "http://software.nju.edu.cn/zychen/index.htm"}
+]}
 ];
