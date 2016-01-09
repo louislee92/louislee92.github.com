@@ -20,7 +20,7 @@
 },
 // 博客
 {cateName: "博客",
- icon: "fa fa-file-rss",
+ icon: "fa fa-file",
  bookmarks: [
  {title: "阮一峰的个人网站", url: "http://www.ruanyifeng.com"},
  {title: "八进制", url: "http://www.cnblogs.com/bjzhanghao/", iconUrl: "http://www.cnblogs.com/favicon.ico"},
