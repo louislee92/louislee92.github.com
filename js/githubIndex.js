@@ -29,6 +29,8 @@ $(document).ready(function(){
 			bookmarks_string += '<a href="'+bm_data[i].bookmarks[j].url+'" target="_blank">';
 			if(bm_data[i].bookmarks[j].icon != undefined){
 				bookmarks_string += '<i style="color: green" class="'+bm_data[i].bookmarks[j].icon+'"></i>&nbsp;'+bm_data[i].bookmarks[j].title+'</a>';
+			}else if(bm_data[i].bookmarks[j].iconUrl != undefined){
+				bookmarks_string += '<img src="'+bm_data[i].bookmarks[j].iconUrl+'"/>&nbsp;'+bm_data[i].bookmarks[j].title+'</a>';
 			}else{
 				var temp = util.getFaviconByUrl(bm_data[i].bookmarks[j].url);
 				bookmarks_string += '<img src="'+temp+'"/>&nbsp;'+bm_data[i].bookmarks[j].title+'</a>';

@@ -15,7 +15,7 @@ body {
   background: #EBEBEB; }
 
 /* common */
-.grid {
+.grid, .panel {
   display: -webkit-flex;
   /* Safari */
   display: flex;
@@ -30,6 +30,9 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: flex-start; }
+
+.panel {
+  padding: 5px; }
 
 .border-img {
   border: 2px solid rgba(0, 0, 0, 0.1); }
@@ -73,7 +76,7 @@ body > div {
   font-family: "Microsoft YaHei";
   color: #666; }
 
-#content .grid a {
+#content .grid a, #content .panel a {
   display: -webkit-flex;
   /* Safari */
   display: flex;
@@ -87,10 +90,10 @@ body > div {
   border: 1px solid transparent;
   padding: 5px; }
 
-#content .grid a img {
+#content .grid a img, #content .panel a img {
   width: 16px; }
 
-#content .grid a:hover {
+#content .grid a:hover, #content .panel a:hover {
   color: #be002f;
   border: 1px solid #be002f; }
 

@@ -47,6 +47,10 @@ body {
 .grid-center{
 	@include flex(row, wrap, space-around, flex-start);
 }
+.panel {
+	@extend .grid;
+	padding: 5px;
+}
 
 .border-img {
 	border: 2px solid rgba(0,0,0,0.1);
