@@ -8,7 +8,7 @@
  {title: "芒果", url: "http://www.hunantv.com"},
  {title: "音悦台", url: "http://www.yinyuetai.com/"},
  {title: "百度音乐盒", url: "http://play.baidu.com/"},
- {title: "echo回声", url: "http://www.app-echo.com/", iconUrl: "http://f.hiphotos.baidu.com/baike/w%3D268/sign=24a3434a5f6034a829e2bf87f31249d9/7e3e6709c93d70cf86416046fbdcd100bba12bc6.jpg"}
+ {title: "echo回声", url: "http://www.app-echo.com/", iconUrl: "http://ww4.sinaimg.cn/small/9e68a475gw1eztkem3bqlj207g07gq2w.jpg"}
  ]},
 // 资讯
 {cateName: "资讯",
