@@ -3,8 +3,9 @@ $(document).ready(function(){
 	// variables
 	var util = {
 		getFaviconByUrl: function(url){
-			var host = url.split("/")[0];
-			return url + "/favicon.ico";
+			var reg=/[a-zA-z]+:\/\/[^\/]*/g;
+			var host = url.match(reg);
+			return host + "/favicon.ico";
 		}
 	};
 	
