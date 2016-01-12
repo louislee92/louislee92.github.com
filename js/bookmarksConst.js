@@ -17,10 +17,11 @@
 {cateName: "资讯&博客",
  icon: "fa fa-newspaper-o",
  bookmarks: [
- {title: "优设网", url: "http://www.uisdc.com/"},
- {title: "博客 - 伯乐在线", url: "http://blog.jobbole.com/"},
+ {title: "Oracle Java Archive", url: "http://www.oracle.com/technetwork/java/javase/archive-139210.html"},
  {title: "Java Code Geeks", url: "http://www.javacodegeeks.com/"},
  {title: "coderwall", url: "https://coderwall.com/"},
+ {title: "优设网", url: "http://www.uisdc.com/"},
+ {title: "博客 - 伯乐在线", url: "http://blog.jobbole.com/"},
  {title: "推酷", url: "http://www.tuicool.com/"},
  {title: "码农网", url: "http://www.codeceo.com/", icon: "fa fa-image"},
  {title: "极客公园", url: "http://www.geekpark.net/"},
