@@ -19,6 +19,8 @@
  bookmarks: [
  {title: "优设网", url: "http://www.uisdc.com/"},
  {title: "博客 - 伯乐在线", url: "http://blog.jobbole.com/"},
+ {title: "Java Code Geeks", url: "http://www.javacodegeeks.com/"},
+ {title: "coderwall", url: "https://coderwall.com/"},
  {title: "推酷", url: "http://www.tuicool.com/"},
  {title: "码农网", url: "http://www.codeceo.com/", icon: "fa fa-image"},
  {title: "极客公园", url: "http://www.geekpark.net/"},
@@ -36,7 +38,7 @@
  {title: "免费的编程中文书籍索引", tag: "program,book", url: "https://github.com/justjavac/free-programming-books-zh_CN"},
  {title: "学习Linux/UNIX的在线免费书籍和课程", tag: "linux,unix,book", url: "http://blog.jobbole.com/76316/"},
  {title: "速查表：常用算法和数据结构的复杂度", tag: "algorithm", url: "http://top.jobbole.com/1599/"},
- {title: "Ubuntu源列表", tag: "ubuntu", url: "http://wiki.ubuntu.org.cn/Qref/Source"},
+ {title: "Programming Tutorials and Source Code Examples", tag: "programing", url: "http://www.java2s.com/"},
  {title: "MyEclipse中文网", tag: "myeclipse", url: "http://www.my-eclipse.cn/"},
  {title: "C Programming Notes", tag: "c,c语言", url: "http://www.eskimo.com/~scs/cclass/notes/top.html"},
  {title: "Sass入门 - Sass教程", tag: "sass,css", url: "http://www.w3cplus.com/sassguide/", icon: "fa fa-image"},
