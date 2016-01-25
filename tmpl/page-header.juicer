@@ -1,5 +1,0 @@
-<section class="page-header">
-<h1 class="project-name">${site.pagetitle}</h1>
-<h3 class="project-tagline">${site.subtitle}</h3>
-	<a style="" class="btn" href="javascript: toggleShow('data-toggle-id-logos');"><h3>Find me on SNS</h3><i class="fa fa-angle-down"></i></a>
-</section>

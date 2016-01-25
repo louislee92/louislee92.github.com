@@ -12,9 +12,13 @@ $(function(){
 
 	// render template to dom element with data
 	function renderTmplTo(url, data, container){
-		$.get(url, function(tmpl){
-			container.html(juicer(tmpl, data));
-		}, "text");
+		if(url instanceof Object){
+			url.before(juicer(url.html(), data));
+		}else{
+			$.get(url, function(tmpl){
+				container.append(juicer(tmpl, data));
+			}, "text");
+		}
 	}
 
 	// profile yaml object
@@ -23,10 +27,12 @@ $(function(){
 	$.get("./data/profile.yaml", function(data){
 		profile = jsyaml.load(data);
 	}, "text").then(function(){
-		console.log(profile);
-		renderTmplTo("./tmpl/site-nav.juicer", profile, $("#site-nav"));
-		renderTmplTo("./tmpl/page-header.juicer", profile, $("#page-header"));
-		renderTmplTo("./tmpl/main-content.juicer", profile, $("#main-content"));
-		renderTmplTo("./tmpl/site-footer.juicer", profile, $("#site-footer"));
+		//console.log(profile);
+		//console.log("##"+$("template#navigation").html());
+		renderTmplTo($("template#navigation"), profile, null);
+		renderTmplTo("./tmpl/index.juicer", profile, $("#container"));
 	});
+
+	// router
+
 });

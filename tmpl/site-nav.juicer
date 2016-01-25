@@ -1,7 +1,0 @@
-<nav class="site-nav">
-    <a class="bar" href="#"><i class="fa fa-bars"></i></a>
-	<a class="brand" href="${nav.home.url}">${nav.home.name}</a>
-	{@each nav.link as it, index}
-		<a href="${it.url}">${it.name}</a>
-	{@/each}
-</nav>

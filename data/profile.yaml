@@ -3,10 +3,15 @@ me:
   name: Louis Lee
   email: louislee92@163.com
   site: https://louislee92.com
-  github: https://github.com/louislee92
   githubname: louislee92
   repo: louislee92.github.com
   avatar: http://ww3.sinaimg.cn/small/9e68a475gw1ezlfvp6gcdj2050050mx4.jpg
+# sns 
+  github: https://github.com/louislee92
+  twitter: https://twitter.com/louislee92
+  facebook: http://www.facebook.com/louislee92
+  weibo: http://weibo.com/louislee2013
+  qq: http://user.qzone.qq.com/466739076
 
 site:
   title: Louis Lee's Home Page
@@ -16,12 +21,6 @@ nav:
   home: {name: Home, url: /}
   link:
     - {name: Blog, url: /blog}
-    - {name: Project, url: /project}
-    - {name: About, url: /about}
-sns:
-  - {name: Weibo, img: http://ww1.sinaimg.cn/small/9e68a475gw1ezlfyzww8sj20200200sl.jpg, url: http://weibo.com/louislee2013}
-  - {name: Github, img: http://ww4.sinaimg.cn/small/9e68a475gw1ezlfyxb4hvj201x01xmwy.jpg, url: https://github.com/louislee92}
-  - {name: Twitter, img: http://ww4.sinaimg.cn/small/9e68a475gw1ezlfyz6u4fj2020020a9u.jpg, url: https://twitter.com/louislee92}
-  - {name: Facebook, img: http://ww1.sinaimg.cn/small/9e68a475gw1ezlfyw6e27j20200203y9.jpg, url: http://www.facebook.com/louislee92}
-  - {name: QQ Zone, img: http://ww3.sinaimg.cn/small/9e68a475gw1ezlfz0mptwj2020020dfo.jpg, url: http://user.qzone.qq.com/466739076}
-  - {name: CSDN Blog, img: http://ww1.sinaimg.cn/small/9e68a475gw1ezlfyvhn9nj2020020jr6.jpg, url: http://blog.csdn.net/louislee92}
+    - {name: Project, url: /project.html}
+    - {name: Bookmark, url: /bookmark}
+    - {name: About, url: /about.html}

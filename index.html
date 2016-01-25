@@ -9,15 +9,23 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 	<link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen">
-</head>
-<body> 
-	<div id="site-nav"></div>
-	<div id="page-header"></div>
-	<div id="main-content"></div>
-	<div id="site-footer"></div>
 	<script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.min.js"></script>
 	<script src="http://cdn.bootcss.com/js-yaml/3.5.2/js-yaml.min.js"></script>
 	<script src="./js/juicer-min.js"></script>
 	<script src="./js/main.js"></script>
+</head>
+<body> 
+<template id="navigation">
+<!-- navigation -->
+<nav class="site-nav">
+    <a class="bar" href="#"><i class="fa fa-bars"></i></a>
+	<a class="brand" href="${nav.home.url}">${nav.home.name}</a>
+	{@each nav.link as it, index}
+		<a href="${it.url}">${it.name}</a>
+	{@/each}
+</nav>
+<!-- end of navigation -->
+</template>
+<div id="container"></div>
 </body>
 </html>
