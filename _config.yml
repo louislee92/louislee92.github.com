@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Louis Lee's Blog
+title: Louis Lee
 email: louislee92@163.com
 description: > # this means to ignore newlines until "baseurl:"
-  If you link this blog, please indicate the source!
+  hello 
   
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://louislee92.com" # the base hostname & protocol for your site
 twitter_username: louislee92
 github_username:  louislee92
