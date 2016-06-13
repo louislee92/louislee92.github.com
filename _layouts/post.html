@@ -57,11 +57,14 @@ layout: default
 		ds.charset = 'UTF-8';
 		(document.getElementsByTagName('head')[0] 
 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	
+	(function(){
 		// 获取该网页的地址
 		var url = $("link[rel=canonical]").attr("href");;
 		$(".ds-share").attr("data-url", url);
 		console.log(url + " # "+$(".ds-share").attr("data-url"));
-	})();
+	});
 	</script>
 <!-- 多说公共JS代码 end -->
 </article>
