@@ -61,7 +61,8 @@ layout: default
 	
 	(function(){
 		// 获取该网页的地址
-		var url = $("link[rel=canonical]").attr("href");;
+		var url = $("link[rel=canonical]").attr("href");
+		console.log(url);
 		$(".ds-share").attr("data-url", url);
 		console.log(url + " # "+$(".ds-share").attr("data-url"));
 	});
