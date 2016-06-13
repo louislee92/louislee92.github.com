@@ -22,10 +22,6 @@ layout: default
 	</time>
 	</p>
   </header>
-  
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
 
 <!-- 多说分享按钮 start -->
 <div class="ds-share flat" data-title="{{ page.title }}" data-url="">
@@ -51,6 +47,10 @@ layout: default
 	console.log(url + " # "+$(".ds-share").attr("data-url"));
 </script>
 <!-- 多说分享按钮 end --> 
+  
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
 
 <!-- 多说评论框 start -->
 	<div class="ds-thread" data-title="{{ page.title }}"></div>
