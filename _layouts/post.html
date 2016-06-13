@@ -58,7 +58,7 @@ layout: default
 		(document.getElementsByTagName('head')[0] 
 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
 		// 获取该网页的地址
-		var url=document.location.href;
+		var url = $("link[rel=canonical]").attr("href");;
 		$(".ds-share").attr("data-url", url);
 		console.log(url + " # "+$(".ds-share").attr("data-url"));
 	})();
