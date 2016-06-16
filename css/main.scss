@@ -15,7 +15,11 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #ffffff;
+$background-color: #efefef;
+$background-color-light: lighten($background-color, 35%);
+$background-color-dark:  darken($background-color, 25%);
+
+// text-color
 $brand-color:      #2ca9e1;
 $brand-color-light: lighten($brand-color, 35%);
 $brand-color-dark:  darken($brand-color, 25%);
@@ -23,6 +27,10 @@ $brand-color-dark:  darken($brand-color, 25%);
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 35%);
 $grey-color-dark:  darken($grey-color, 25%);
+
+$blank-color:	   #fff;
+$blank-color-light: lighten($blank-color, 35%);
+$blank-color-dark:  darken($blank-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
