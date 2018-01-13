@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "只愿你曾被这世界温柔相待"
+title: "只愿你曾被这世界温柔s"
 categories: life
 tags: 
   - 只愿你曾被这世界温柔相待
