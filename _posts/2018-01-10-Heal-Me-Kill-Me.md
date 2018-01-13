@@ -1,6 +1,6 @@
-﻿---
+---
 layout: post
-title: "我们会不会也有多重人格呢"
+title: "Are We Got the DID"
 categories: life
 tags: 
   - 七个我
