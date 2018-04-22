@@ -17,3 +17,5 @@ tags:
 世间万物，蝇营狗苟。一念起，善恶生。生而为人，喜怒哀乐。人前人后，恍恍惚惚。时而勤奋，时而懒惰。或与人聚散，或孤身冥思。念父母兄妹之情，忧人间万物之终。柴米油盐不见来世，生老病死皆有定数。
 
 既然冥冥之中自有定数，那就抛下一切烦恼，努力做自己想要做的事情。去想去的地方，见想见的人，攀一座山，望一轮月；骑骑车感受风在耳边的嘶喊，弹弹吉他享受音乐带来的愉悦；吃自己喜欢的食物，追自己喜欢的人。不勉强，不强求！
+
+<embed src='http://player.youku.com/player.php/sid/XMzU1NzAyNDkyMA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash' />
