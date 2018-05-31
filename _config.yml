@@ -22,3 +22,7 @@ exclude: [CNAME]
 
 # Profile settings
 username: Louis Lee
+
+# plugins
+plugins: [jekyll-paginate]
+paginate: 5

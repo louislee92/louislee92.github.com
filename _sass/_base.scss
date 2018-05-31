@@ -204,3 +204,23 @@ pre {
         }
     }
 }
+
+/**
+ * paginate
+ */
+.pagination {
+    
+}
+.previous,.next {
+    padding: 10px;
+    border: 1px solid #333;
+}
+a.previous:hover, a.next:hover {
+    background: $brand-color;
+    border-color: $brand-color;
+    color: white;
+}
+span.previous, span.next {
+    border-color: #777;
+    color: #777;
+}
