@@ -30,5 +30,5 @@ exclude: [CNAME]
 username: Louis Lee
 
 # plugins
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate, jemoji]
 paginate: 5
