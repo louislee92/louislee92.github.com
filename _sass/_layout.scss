@@ -75,7 +75,7 @@
 
         .trigger {
             clear: both;
-            display:f none;
+            display: none;
         }
 
         &:hover .trigger {
@@ -192,12 +192,13 @@
 
 .post-list {
     margin-left: 0;
+    margin: 0;
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit/2;
-		padding: $spacing-unit/4;
-		background: linear-gradient(to right, $blank-color, $blank-color, $background-color);
+        /* margin-bottom: $spacing-unit/14; */
+		padding: $spacing-unit/16;
+		background: linear-gradient(to right, $blank-color, $background-color);
 		border-left: 5px solid $blank-color;
 		
 		&:hover {
@@ -226,6 +227,38 @@
     display: block;
     font-size: 24px;
 }
+
+
+/**
+ * paginate
+ */
+.pagination {
+    text-align: center;
+}
+.pagination img {
+    width: 100%;
+    height: 3em;
+}
+.previous,.next {
+    color: $text-color;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.625em;
+    border-radius: 0.3125em;
+    /*border: 1px solid #333;*/
+    box-shadow: 0 1px 3px rgba(0,0,0,.3), inset 0 1px 1px rgba(255,255,255,.5);
+    background: #777;
+}
+a.previous:hover, a.next:hover{
+    color: $text-color-light;
+    background: #888;
+}
+span.previous, span.next {
+    cursor: not-allowed;
+}
+
+
 
 
 

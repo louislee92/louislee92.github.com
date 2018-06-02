@@ -25,7 +25,7 @@ layout: default
 
   <!-- 分页链接 -->
 <div class="pagination">
-  <div><img src="https://www.jekyll.com.cn/img/article-footer.png"></div>
+  <div class="splitLine"><img src="/img/article-footer.png"></div>
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-chevron-left"></i> 后退</a>
   {% else %}
@@ -35,7 +35,7 @@ layout: default
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">前进 <i class="fa fa-chevron-right"></i></a>
   {% else %}
-    <span class="next ">前进 <i class="fa fa-chevron-right"></span>
+    <span class="next ">前进 <i class="fa fa-chevron-right"></i></span>
   {% endif %}
 </div>
 

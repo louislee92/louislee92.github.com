@@ -213,32 +213,6 @@ pre {
     }
 }
 
-/**
- * paginate
- */
-.pagination {
-    text-align: center;
-}
-.previous,.next {
-    color: $text-color;
-    font-size: 1em;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 0.625em;
-    border-radius: 0.3125em;
-    /*border: 1px solid #333;*/
-    box-shadow: 0 1px 3px rgba(0,0,0,.3), inset 0 1px 1px rgba(255,255,255,.5);
-    background: #777;
-}
-a.previous:hover, a.next:hover{
-    color: $text-color;
-    background: #888;
-}
-span.previous, span.next {
-    cursor: not-allowed;
-}
-
-
 
 /**
  * article
