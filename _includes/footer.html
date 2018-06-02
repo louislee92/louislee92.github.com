@@ -24,6 +24,17 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+		  
+          {% if site.weibo_username %}
+          <li>
+            {% include icon-weibo.html url=site.weibo_url username=site.weibo_username %}
+          </li>
+          {% endif %}
+          {% if site.csdn_username %}
+          <li>
+            {% include icon-csdn.html url=site.csdn_url username=site.csdn_username %}
+          </li>
+          {% endif %}
         </ul>
       </div>
 

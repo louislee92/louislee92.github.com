@@ -15,9 +15,10 @@ tags:
 
 ## 漫想
 
-[The truth that you leave - 歌曲链接来自网易云音乐][1]
-<audio src="http://m10.music.126.net/20180531011744/9fb64b274c14b2145b6bbfbc9ef8263b/ymusic/e71f/46a5/6ac1/57439e13c71a01774fc1dba9ff7be0f0.mp3" controls="controls">
-</audio>
+{% include music-163.html id='445154107' %}
+
+
+
 
 无奈一时之间又无法入眠，于是便有了这篇似诗非诗，似歌非歌的诗歌四不像。聊以慰藉...
 

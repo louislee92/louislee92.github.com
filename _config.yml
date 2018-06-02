@@ -9,12 +9,18 @@
 title: 路易斯·李
 email: louislee92@163.com
 description: > # this means to ignore newlines until "baseurl:"
-  喜欢就分享吧！
+  我瞻四方，蹙蹙靡所骋！
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://louislee92.com" # the base hostname & protocol for your site
 twitter_username: louislee92
 github_username:  louislee92
+
+# 
+csdn_url: https://blog.csdn.net/louislee92
+csdn_username: 纠结者路易斯李
+weibo_url: https://weibo.com/louislee2013/
+weibo_username: 路易斯李李李
 
 # Build settings
 markdown: kramdown

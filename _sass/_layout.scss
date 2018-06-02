@@ -3,7 +3,7 @@
  */
 .site-header {
     border-top: 5px solid $brand-color;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color-dark;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -20,6 +20,9 @@
 
     &,
     &:visited {
+        color: $brand-color;
+    }
+    &:hover {
         color: $brand-color-dark;
     }
 }
@@ -65,14 +68,14 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $text-color;
                 }
             }
         }
 
         .trigger {
             clear: both;
-            display: none;
+            display:f none;
         }
 
         &:hover .trigger {
@@ -98,8 +101,12 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $grey-color-dark;
     padding: $spacing-unit 0;
+
+    h2 {
+        color: $text-color-dark;
+    }
 }
 
 .footer-heading {
@@ -115,9 +122,17 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: $text-color-dark;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
+
+    a {
+        color: $text-color;
+        
+        &:hover {
+            color: $brand-color;
+        }
+    }
 }
 
 .footer-col {
@@ -189,12 +204,19 @@
 			background: linear-gradient(to right, $blank-color, $blank-color);
 			border-left: 5px solid $brand-color;
 		}
+
+        > a {
+            color: $text-color;
+            &:hover {
+                color: $brand-color;
+            }
+        }
     }
 }
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $grey-color-light;
 	i {
 		width: 20px;
 	}
@@ -212,6 +234,10 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+
+    h1 {
+        font-weight: bold;  
+    }
 }
 
 .post-title {
@@ -226,6 +252,10 @@
 
 .post-content {
     margin-bottom: $spacing-unit;
+
+    h2, h3, h4 {
+        font-weight: bold;
+    }
 
     h2 {
         font-size: 32px;

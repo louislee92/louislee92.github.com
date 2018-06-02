@@ -25,16 +25,17 @@ layout: default
 
   <!-- 分页链接 -->
 <div class="pagination">
+  <div><img src="https://www.jekyll.com.cn/img/article-footer.png"></div>
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-chevron-left"></i> 后退</a>
   {% else %}
-    <span class="previous">Previous</span>
+    <span class="previous"><i class="fa fa-chevron-left"></i> 后退</span>
   {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  <span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    <a href="{{ paginator.next_page_path }}" class="next">前进 <i class="fa fa-chevron-right"></i></a>
   {% else %}
-    <span class="next ">Next</span>
+    <span class="next ">前进 <i class="fa fa-chevron-right"></span>
   {% endif %}
 </div>
 

@@ -23,6 +23,9 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    /* add shadow */
+    box-shadow: inset 0 3px 30px rgba(0,0,0,.3);
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 
@@ -91,15 +94,20 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $brand-color-dark;
     text-decoration: none;
+    transition: all .25s;
+    -moz-transition: all .25s;
+    -webkit-transition: all .25s;
+    
+    color: $brand-color;
 
-    &:visited {
+    /*&:visited {
         color: darken($brand-color, 15%);
-    }
+    }*/
 
     &:hover {
-        color: $text-color;
+        color: $brand-color-dark;
         text-decoration: none;
     }
 }
@@ -130,9 +138,8 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $grey-color-dark;
     border-radius: 3px;
-    background-color: #eef;
 }
 
 code {
@@ -147,6 +154,7 @@ pre {
         border: 0;
         padding-right: 0;
         padding-left: 0;
+        font-family: 'microsoft yahei';
     }
 }
 
@@ -200,7 +208,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $text-color-dark;
         }
     }
 }
@@ -209,18 +217,34 @@ pre {
  * paginate
  */
 .pagination {
-    
+    text-align: center;
 }
 .previous,.next {
-    padding: 10px;
-    border: 1px solid #333;
+    color: $text-color;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.625em;
+    border-radius: 0.3125em;
+    /*border: 1px solid #333;*/
+    box-shadow: 0 1px 3px rgba(0,0,0,.3), inset 0 1px 1px rgba(255,255,255,.5);
+    background: #777;
 }
-a.previous:hover, a.next:hover {
-    background: $brand-color;
-    border-color: $brand-color;
-    color: white;
+a.previous:hover, a.next:hover{
+    color: $text-color;
+    background: #888;
 }
 span.previous, span.next {
-    border-color: #777;
-    color: #777;
+    cursor: not-allowed;
+}
+
+
+
+/**
+ * article
+ */
+article {
+    background: $blank-color;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+    padding: 20px;
 }
