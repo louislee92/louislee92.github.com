@@ -118,9 +118,9 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $text-color-dark;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    color: $text-color-dark; 
+    border-left: 4px solid $grey-color-light; 
+    padding-left: $spacing-unit / 2; 
     font-size: 18px;
     letter-spacing: -1px;
     /* font-style: italic; */
@@ -129,6 +129,15 @@ blockquote {
         margin-bottom: 0;
     }
 }
+/* blockquote:before, blockquote:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: -webkit-linear-gradient(left, $blank-color,$blank-color-light,$blank-color);
+    background: -moz-linear-gradient(left, $blank-color,$blank-color-light,$blank-color);
+    background: linear-gradient(left, $blank-color,$blank-color-light,$blank-color);
+} */
 
 
 

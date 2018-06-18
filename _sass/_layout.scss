@@ -266,7 +266,8 @@ span.previous, span.next {
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+    text-align: center;
+    margin-bottom: $spacing-unit / 2;
 
     h1 {
         font-weight: bold;  
