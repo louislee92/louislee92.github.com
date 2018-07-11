@@ -18,4 +18,4 @@ tags:
 
 既然冥冥之中自有定数，那就抛下一切烦恼，努力做自己想要做的事情。去想去的地方，见想见的人，攀一座山，望一轮月；骑骑车感受风在耳边的嘶喊，弹弹吉他享受音乐带来的愉悦；吃自己喜欢的食物，追自己喜欢的人。不勉强，不强求！
 
-<embed src='http://player.youku.com/player.php/sid/XMzU1NzAyNDkyMA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash' />
+<embed style="width: 100%;" src='http://player.youku.com/player.php/sid/XMzcxNzc3OTgyNA==/v.swf' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash' />
