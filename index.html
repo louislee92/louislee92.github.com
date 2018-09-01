@@ -13,10 +13,11 @@ layout: default
 		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
 			
 			<div>
-				<span class="post-meta">{{ post.date | date: "%d %b %Y" }}-{{ post.categories }}</span>
+				<span class="post-meta">:calendar:  {{ post.date | date: "%Y年%-m月%-d日" }}  </span>
+				<span class="post-meta">:art: {{ post.categories }}</span>
 				<h4>
 				  {{ post.title }}
-				</h4>
+				</h4>	
 			</div>
 		</a>
       </li>

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 项目
+icon: ':bulb:'
 permalink: /projects/
 ---
 

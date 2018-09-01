@@ -200,6 +200,7 @@
 		padding: $spacing-unit/16;
 		background: linear-gradient(to right, $blank-color, $background-color);
 		border-left: 5px solid $blank-color;
+		padding-left: 5px;
 		
 		&:hover {
 			background: linear-gradient(to right, $blank-color, $blank-color);
