@@ -1,0 +1,6 @@
+html,body,.home{
+	height: 100%;
+}
+.home {
+	overflow: auto;
+}

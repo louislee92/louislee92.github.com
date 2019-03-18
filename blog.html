@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="home">
+  <!-- hidden
+  <h1 class="page-heading">博客列表</h1>
+  -->
+
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+			
+			<div>
+				<span class="post-meta">:calendar:  {{ post.date | date: "%Y年%-m月%-d日" }}  </span>
+				<span class="post-meta">:art: {{ post.categories }}</span>
+				<h4>
+				  {{ post.title }}
+				</h4>	
+			</div>
+		</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- 分页链接 -->
+<div class="pagination">
+  <div class="splitLine"><img src="/img/article-footer.png"></div>
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-chevron-left"></i> 后退</a>
+  {% else %}
+    <span class="previous"><i class="fa fa-chevron-left"></i> 后退</span>
+  {% endif %}
+  <span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">前进 <i class="fa fa-chevron-right"></i></a>
+  {% else %}
+    <span class="next ">前进 <i class="fa fa-chevron-right"></i></span>
+  {% endif %}
+</div>
+
+</div>
