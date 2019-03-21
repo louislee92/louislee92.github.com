@@ -228,6 +228,12 @@
 	&:not(:last-child) {	
 		margin-right: 15px;
 	}
+	
+	> time {
+		&:not(:last-child) {
+			margin-right:10px;
+		}
+	}
 }
 
 .post-link {
