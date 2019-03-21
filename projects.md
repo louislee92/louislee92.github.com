@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 项目
-icon: ':bulb:'
+icon: '<i class="fa fa-folder"></i>'
 permalink: /projects/
 ---
 

@@ -8,22 +8,23 @@ layout: default
     <p class="post-meta">
 	
 	<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-	:calendar: {{ page.date | date: "%Y年%-m月%-d日 " }}</time>
+		<i class="fa fa-calendar"></i> 
+		{{ page.date | date: "%Y年%-m月%-d日 " }}</time>
 	<time>
 		{% if page.author %}
-			:robot:
+			<i class="fa fa-user"></i>
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span>
 			</span>
 		{% else %}
-			:alien:
+			<i class="fa fa-user"></i>
 			<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.username }}</span></span>
 		{% endif %}
 	</time>
 	<time>
-		:art:{{ page.categories }}
+		<i class="fa fa-folder"></i>{{ page.categories }}
 	</time>
 	<time>
-		:label:{% for tag in page.tags %}<span>{{tag}}</span> {% endfor %}
+		<i class="fa fa-tags"></i>{% for tag in page.tags %}<span>{{tag}}</span> {% endfor %}
 	</time>
 	</p>
 	

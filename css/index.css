@@ -1,6 +1,6 @@
-html,body,.home{
+html,body,.wrapper{
 	height: 100%;
 }
-.home {
+.wrapper {
 	overflow: auto;
 }
