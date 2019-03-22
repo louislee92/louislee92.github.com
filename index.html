@@ -13,13 +13,21 @@ layout: default
 		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
 			
 			<div>
-				<div>
-					<span class="post-meta"><i class="fa fa-calendar"></i> {{ post.date | date: "%Y年%-m月%-d日" }}  </span>
-					<span class="post-meta"><i class="fa fa-folder"></i> {{ post.categories }}</span>
-				</div>
-				<h4>
-				  {{ post.title }}
-				</h4>	
+				<span>
+					{% if post.categories contains  'life' %}
+						<i class="fa fa-heartbeat"></i>
+					{% elsif post.categories contains  'music' %}
+						<i class="fa fa-music"></i>
+					{% elsif post.categories contains  'movie' %}
+						<i class="fa fa-film"></i>
+					{% elsif post.categories contains  'book' %}
+						<i class="fa fa-book"></i>
+					{% else %}
+						<i class="fa fa-cogs"></i>
+					{% endif %}
+				</span>
+				<span>{{ post.date | date: "%Y-%m-%d" }}</span>
+				<span>{{ post.title }}</span>	
 			</div>
 		</a>
       </li>
