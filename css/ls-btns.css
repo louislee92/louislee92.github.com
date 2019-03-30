@@ -20,6 +20,27 @@
     color: #222;
 }
 
+
+/* 类型2： 圆角扁平按钮 */
+.ls-btn-2{
+    transition: all .2s;    
+    margin-bottom: 5px;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 5px 100px;
+    border-radius: 18px;
+    border: 1px solid rgba(222,222,222,1);
+    background: transparent;
+    color: rgba(222,222,222,1);
+}
+.ls-btn-2:hover {
+    background: rgba(222,222,222,1);
+    color: #111;
+}
+
+
+
 /* 蓝色背景 */
 .ls-btn-bg-blue {
 	border: 1px solid rgba(42,183,210,1);
@@ -67,6 +88,51 @@
 }
 
 
+/* 蓝色边框 */
+.ls-btn-bd-blue {
+    border: 1px solid rgba(42,183,210,1);
+    color: rgba(42,183,210,1);
+    background: transparent;
+}
+.ls-btn-bd-blue:hover{
+    border: 1px solid transparent;
+    background: rgba(42,183,210,0.8);
+    color: white;
+}
+
+/* 红色背景 */
+.ls-btn-bd-red {
+    border: 1px solid rgba(232,18,18,1);
+    color: rgba(232,18,18,1);
+    background: transparent;
+}
+.ls-btn-bd-red:hover{
+    border: 1px solid transparent;
+    background: rgba(232,18,18,0.8);
+    color: white;
+}
+/* 橙色背景 */
+.ls-btn-bd-orange {
+    border: 1px solid rgba(228,191,17,1);
+    color: rgba(228,191,17,1);
+    background: transparent;
+}
+.ls-btn-bd-orange:hover{
+    border: 1px solid transparent;
+    background: rgba(228,191,17,0.8);
+    color: white;
+}
+/* 绿色背景 */
+.ls-btn-bd-green {
+    border: 1px solid rgba(35,191,72,1);
+    color: rgba(35,191,72,1);
+    background: transparent;
+}
+.ls-btn-bd-green:hover{
+    border: 1px solid transparent;
+    background: rgba(35,191,72,0.8);
+    color: white;
+}
 
 /* 蓝色阴影 */
 .ls-btn-shadow-blue {
