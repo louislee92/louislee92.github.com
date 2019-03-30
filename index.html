@@ -14,16 +14,12 @@ layout: default
 			
 			<div>
 				<span>
-					{% if post.categories contains  'life' %}
-						<i class="fa fa-heartbeat"></i>
-					{% elsif post.categories contains  'music' %}
-						<i class="fa fa-music"></i>
-					{% elsif post.categories contains  'movie' %}
-						<i class="fa fa-film"></i>
-					{% elsif post.categories contains  'book' %}
-						<i class="fa fa-book"></i>
+					{% if post.categories contains  'css' %}
+						<i class="fa fa-css3"></i>
+					{% elsif post.categories contains  'html' %}
+						<i class="fa fa-html5"></i>
 					{% else %}
-						<i class="fa fa-cogs"></i>
+						<i class="fa fa-code"></i>
 					{% endif %}
 				</span>
 				<span>{{ post.date | date: "%Y-%m-%d" }}</span>
