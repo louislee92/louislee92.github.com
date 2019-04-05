@@ -215,39 +215,26 @@ css3的```border-radius```属性可以实现圆角边框，如下面几个按钮
 
 
 
-### 形状
-
-形状的变化可能会使按钮会更活泼生动一些，比如按钮的填充、边框
-
-
-
-
-
-
-
-
 
 
 ## 基础属性组合后得到的一些按钮样式
 
 通过将背景、字体、边框等属性进行组合，可以得到一些令人惊艳的按钮样式。
 
-### 扁平纯色按钮
-
-<div class="a-5">
-	<a class="ls-btn ls-btn-bg-white ls-btn-clr-black">我是</a>
-	<a class="ls-btn ls-btn-bg-blue ls-btn-clr-white">这么胖嘟嘟的</a>
-	<a class="ls-btn ls-btn-bg-red ls-btn-clr-white">是不是</a>
-	<a class="ls-btn ls-btn-bg-orange ls-btn-clr-white">好阔爱呀！</a>
-	<a class="ls-btn ls-btn-bg-green ls-btn-clr-white">嗯，是滴</a>
-</div>
+<p class="a-5">
+	<button class="ls-btn ls-btn-bg-white ls-btn-clr-black">我是</button>
+	<button class="ls-btn ls-btn-bg-blue ls-btn-clr-white">这么扁扁的</button>
+	<button class="ls-btn ls-btn-bg-red ls-btn-clr-white">是不是</button>
+	<button class="ls-btn ls-btn-bg-orange ls-btn-clr-white">感觉</button>
+	<button class="ls-btn ls-btn-bg-green ls-btn-clr-white">很舒服</button>
+</p>
 
 
 以蓝色背景的按钮为例，以下是按钮对应的html代码和css代码
 
 
 ```html
-<a class="ls-btn ls-btn-bg-blue ls-btn-clr-white">这么胖嘟嘟的</a>
+<a class="ls-btn ls-btn-bg-blue ls-btn-clr-white">这么扁扁的</a>
 ```
 
 
@@ -264,26 +251,28 @@ css3的```border-radius```属性可以实现圆角边框，如下面几个按钮
     padding: 10px 20px;
 }
 /* 按钮背景颜色设置 */
-.ls-btn-bg-blue {background: rgba(42,183,210,0.8);}
-.ls-btn-bg-blue:hover{background: rgba(42,183,210,1);}
+.ls-btn-bg-blue:hover,.ls-btn-bg-blue:focus{background: rgba(42,183,210,1);}
+.ls-btn-bg-blue,.ls-btn-bg-blue:active {background: rgba(42,183,210,0.8);}
 /* 字体颜色设置 */
-.ls-btn-clr-white {color: rgba(255,255,255,0.8);}
-.ls-btn-clr-white:hover{color: rgba(255,255,255,1);}
+.ls-btn-clr-white:hover,.ls-btn-clr-white:focus{color: rgba(255,255,255,1);}
+.ls-btn-clr-white,.ls-btn-clr-white:active {color: rgba(255,255,255,0.8);}
 ```
 
 其中，```ls-btn```是基础样式类，```ls-btn-bg-blue```是背景样式类，```ls-btn-clr-white```是字体颜色样式类，背景和字体样式最后的颜色单词可以替换为对应颜色的类名。这三种类名，在使用时需注意调用的顺序，基础样式需在首位，背景其次，最后是字体颜色样式。
+
+可以看出来，上述按钮正常(normal)和激活(active)状态使用了同样的样式，悬停(hover)和聚焦(focus)使用同样样式。聚焦伪类仅对支持或设置了```tabindex```属性的元素有效。而且，需要注意激活(active)样式需要在悬停(hover)之后。
 
 
 以上仅仅使用了背景色和字体颜色属性，就制作出直角纯色的按钮。加上圆角边框后就得到了圆角纯色按钮。
 
 
-<div class="a-5">
-	<a class="ls-btn ls-btn-bdr ls-btn-bg-white ls-btn-clr-black">我是</a>
-	<a class="ls-btn ls-btn-bdr ls-btn-bg-blue ls-btn-clr-white">这么胖嘟嘟的</a>
-	<a class="ls-btn ls-btn-bdr ls-btn-bg-red ls-btn-clr-white">是不是</a>
-	<a class="ls-btn ls-btn-bdr ls-btn-bg-orange ls-btn-clr-white">好阔爱呀！</a>
-	<a class="ls-btn ls-btn-bdr ls-btn-bg-green ls-btn-clr-white">嗯，是滴</a>
-</div>
+<p class="a-5">
+	<button class="ls-btn ls-btn-bdr ls-btn-bg-white ls-btn-clr-black">嗯嗯</button>
+	<button class="ls-btn ls-btn-bdr ls-btn-bg-blue ls-btn-clr-white">圆角的</button>
+	<button class="ls-btn ls-btn-bdr ls-btn-bg-red ls-btn-clr-white">按钮</button>
+	<button class="ls-btn ls-btn-bdr ls-btn-bg-orange ls-btn-clr-white">感受下</button>
+	<button class="ls-btn ls-btn-bdr ls-btn-bg-green ls-btn-clr-white"><i class="fa fa-heart-o"></i> 吧</button>
+</p>
 
 ```html
 <a class="ls-btn ls-btn-bdr ls-btn-bg-blue ls-btn-clr-white">这么胖嘟嘟的</a>
@@ -297,3 +286,30 @@ css3的```border-radius```属性可以实现圆角边框，如下面几个按钮
 <span class="ls-badge ls-bg-red">TIPS</span> : 需要注意，```border-radius```单位为像素时，值如果大于高度的50%时，浏览器将重新计算为50%，所以可以得到左右两头为圆角的按钮。
 
 
+同样，试一下边框和字体颜色组合后的效果吧
+
+
+<p class="a-5">
+	<button class="ls-btn ls-btn-bd-white ls-btn-clr-white">方方</button>
+	<button class="ls-btn ls-btn-bd-blue ls-btn-clr-blue">正正</button>
+	<button class="ls-btn ls-btn-bd-red ls-btn-clr-red">边线</button>
+	<button class="ls-btn ls-btn-bd-orange ls-btn-clr-orange">分明</button>
+	<button class="ls-btn ls-btn-bd-green ls-btn-clr-green"><i class="fa fa-heart"></i></button>
+</p>
+
+仅仅把之前的背景色和颜色类做了修改，就像下面代码这样
+```html
+<a class="ls-btn ls-btn-bdr ls-btn-bg-blue ls-btn-clr-white">这么胖嘟嘟的</a>
+```
+
+
+加上圆角再看下 :)
+
+
+<p class="a-5">
+	<button class="ls-btn ls-btn-bd-white ls-btn-bdr ls-btn-clr-white">我是</button>
+	<button class="ls-btn ls-btn-bd-blue ls-btn-bdr ls-btn-clr-blue">圆角</button>
+	<button class="ls-btn ls-btn-bd-red ls-btn-bdr ls-btn-clr-red">彩色</button>
+	<button class="ls-btn ls-btn-bd-orange ls-btn-bdr ls-btn-clr-orange">边框</button>
+	<button class="ls-btn ls-btn-bd-green ls-btn-bdr ls-btn-clr-green">按钮</button>
+</p>

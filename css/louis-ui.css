@@ -31,62 +31,65 @@
     margin-bottom: 5px;
     margin-right: 5px;
     padding: 10px 20px;
+    border: none;
+    background: none;
+    font-size: inherit;
 }
 
 /* 圆角 */
 .ls-btn-bdr {border-radius: 100px;}
 
 /* 字体颜色设置 */
-.ls-btn-clr-black {color: rgba(0,0,0,0.8);}
-.ls-clr-black,.ls-btn-clr-black:hover{color: rgba(0,0,0,1);}
-.ls-btn-clr-white {color: rgba(255,255,255,0.8);}
-.ls-clr-white,.ls-btn-clr-white:hover{color: rgba(255,255,255,1);}
-.ls-btn-clr-blue {color: rgba(42,183,210,0.8);}
-.ls-clr-blue,.ls-btn-clr-blue:hover{color: rgba(42,183,210,1);}
-.ls-btn-clr-red {color: rgba(232,18,18,0.8);}
-.ls-clr-red,.ls-btn-clr-red:hover{color: rgba(232,18,18,1);}
-.ls-btn-clr-orange {color: rgba(228,191,17,0.8);}
-.ls-clr-orange,.ls-btn-clr-orange:hover{color: rgba(228,191,17,1);}
-.ls-btn-clr-green {color: rgba(35,191,72,0.8);}
-.ls-clr-green,.ls-btn-clr-green:hover{color: rgba(35,191,72,1);}
+.ls-clr-black,.ls-btn-clr-black:hover,.ls-btn-clr-black:focus {color: rgba(0,0,0,1);}
+.ls-btn-clr-black,.ls-btn-clr-black:active {color: rgba(0,0,0,0.8);}
+.ls-clr-white,.ls-btn-clr-white:hover,.ls-btn-clr-white:focus {color: rgba(255,255,255,1);}
+.ls-btn-clr-white,.ls-btn-clr-white:active {color: rgba(255,255,255,0.8);}
+.ls-clr-blue,.ls-btn-clr-blue:hover,.ls-btn-clr-blue:focus {color: rgba(42,183,210,1);}
+.ls-btn-clr-blue,.ls-btn-clr-blue:active {color: rgba(42,183,210,0.8);}
+.ls-clr-red,.ls-btn-clr-red:hover,.ls-btn-clr-red:focus {color: rgba(232,18,18,1);}
+.ls-btn-clr-red,.ls-btn-clr-red:active {color: rgba(232,18,18,0.8);}
+.ls-clr-orange,.ls-btn-clr-orange:hover,.ls-btn-clr-orange:focus {color: rgba(228,191,17,1);}
+.ls-btn-clr-orange,.ls-btn-clr-orange:active {color: rgba(228,191,17,0.8);}
+.ls-clr-green,.ls-btn-clr-green:hover,.ls-btn-clr-green:focus {color: rgba(35,191,72,1);}
+.ls-btn-clr-green,.ls-btn-clr-green:active {color: rgba(35,191,72,0.8);}
 
 /* 背景颜色设置 */
-.ls-btn-bg-white {background: rgba(255,255,255,0.8);}
-.ls-bg-white,.ls-btn-bg-white:hover{background: rgba(255,255,255,1);}
-.ls-btn-bg-blue {background: rgba(42,183,210,0.8);}
-.ls-bg-blue,.ls-btn-bg-blue:hover{background: rgba(42,183,210,1);}
-.ls-btn-bg-red {background: rgba(232,18,18,0.8);}
-.ls-bg-red,.ls-btn-bg-red:hover{background: rgba(232,18,18,1);}
-.ls-btn-bg-orange {background: rgba(228,191,17,0.8);}
-.ls-bg-orange,.ls-btn-bg-orange:hover{background: rgba(228,191,17,1);}
-.ls-btn-bg-green {background: rgba(35,191,72,0.8);}
-.ls-bg-green,.ls-btn-bg-green:hover{background: rgba(35,191,72,1);}
+.ls-bg-white,.ls-btn-bg-white:hover,.ls-btn-bg-white:focus {background: rgba(255,255,255,1);}
+.ls-btn-bg-white,.ls-btn-bg-white:active {background: rgba(255,255,255,0.8);}
+.ls-bg-blue,.ls-btn-bg-blue:hover,.ls-btn-bg-blue:focus {background: rgba(42,183,210,1);}
+.ls-btn-bg-blue,.ls-btn-bg-blue:active {background: rgba(42,183,210,0.8);}
+.ls-bg-red,.ls-btn-bg-red:hover,.ls-btn-bg-red:focus {background: rgba(232,18,18,1);}
+.ls-btn-bg-red,.ls-btn-bg-red:active {background: rgba(232,18,18,0.8);}
+.ls-bg-orange,.ls-btn-bg-orange:hover,.ls-btn-bg-orange:focus {background: rgba(228,191,17,1);}
+.ls-btn-bg-orange,.ls-btn-bg-orange:active {background: rgba(228,191,17,0.8);}
+.ls-bg-green,.ls-btn-bg-green:hover,.ls-btn-bg-green:focus {background: rgba(35,191,72,1);}
+.ls-btn-bg-green,.ls-btn-bg-green:active {background: rgba(35,191,72,0.8);}
 
 
 /* 边框颜色设置 */
-.ls-btn-bd-white {border: 1px solid rgba(255,255,255,0.8);}
-.ls-bd-white,.ls-btn-bd-white:hover{border: 1px solid rgba(255,255,255,1);}
-.ls-btn-bd-blue {border: 1px solid rgba(42,183,210,0.8);}
-.ls-bd-blue,.ls-btn-bd-blue:hover{border: 1px solid rgba(42,183,210,1);}
-.ls-btn-bd-red {border: 1px solid rgba(232,18,18,0.8);}
-.ls-bd-red,.ls-btn-bd-red:hover{border: 1px solid rgba(232,18,18,1);}
-.ls-btn-bd-orange {border: 1px solid rgba(228,191,17,0.8);}
-.ls-bd-orange,.ls-btn-bd-orange:hover{border: 1px solid rgba(228,191,17,1);}
-.ls-btn-bd-green {border: 1px solid rgba(35,191,72,0.8);}
-.ls-bd-green,.ls-btn-bd-green:hover{border: 1px solid rgba(35,191,72,1);}
+.ls-bd-white,.ls-btn-bd-white:hover,.ls-btn-bd-white:focus {border: 1px solid rgba(255,255,255,1);}
+.ls-btn-bd-white,.ls-btn-bd-white:active {border: 1px solid rgba(255,255,255,0.8);}
+.ls-bd-blue,.ls-btn-bd-blue:hover,.ls-btn-bd-blue:focus {border: 1px solid rgba(42,183,210,1);}
+.ls-btn-bd-blue,.ls-btn-bd-blue:active {border: 1px solid rgba(42,183,210,0.8);}
+.ls-bd-red,.ls-btn-bd-red:hover,.ls-btn-bd-red:focus {border: 1px solid rgba(232,18,18,1);}
+.ls-btn-bd-red,.ls-btn-bd-red:active {border: 1px solid rgba(232,18,18,0.8);}
+.ls-bd-orange,.ls-btn-bd-orange:hover,.ls-btn-bd-orange:focus {border: 1px solid rgba(228,191,17,1);}
+.ls-btn-bd-orange,.ls-btn-bd-orange:active {border: 1px solid rgba(228,191,17,0.8);}
+.ls-bd-green,.ls-btn-bd-green:hover,.ls-btn-bd-green:focus {border: 1px solid rgba(35,191,72,1);}
+.ls-btn-bd-green,.ls-btn-bd-green:active {border: 1px solid rgba(35,191,72,0.8);}
 
 /* 边角半径 */
 .ls-bd-radius-5 {border-radius: 5px;}
 .ls-bd-radius-10 {border-radius: 10px;}
 
 /* 阴影颜色设置 */
-.ls-btn-sd-white {box-shadow: 0px 0px 5px rgba(255,255,255,0.8);}
-.ls-sd-white,.ls-btn-sd-white:hover{box-shadow: 0px 0px 20px rgba(255,255,255,1);}
-.ls-btn-sd-blue {box-shadow: 0px 0px 5px rgba(42,183,210,0.8);}
-.ls-sd-blue,.ls-btn-sd-blue:hover{box-shadow: 0px 0px 20px rgba(42,183,210,1);}
-.ls-btn-sd-red {box-shadow: 0px 0px 5px rgba(232,18,18,0.8);}
-.ls-sd-red,.ls-btn-sd-red:hover{box-shadow: 0px 0px 20px rgba(232,18,18,1);}
-.ls-btn-sd-orange {box-shadow: 0px 0px 5px rgba(228,191,17,0.8);}
-.ls-sd-orange,.ls-btn-sd-orange:hover{box-shadow: 0px 0px 20px rgba(228,191,17,1);}
-.ls-btn-sd-green {box-shadow: 0px 0px 5px rgba(35,191,72,0.8);}
-.ls-sd-green,.ls-btn-sd-green:hover{box-shadow: 0px 0px 20px rgba(35,191,72,1);}
+.ls-sd-white,.ls-btn-sd-white:hover,.ls-btn-sd-white:focus {box-shadow: 0px 0px 20px rgba(255,255,255,1);}
+.ls-btn-sd-white,.ls-btn-sd-white:active {box-shadow: 0px 0px 5px rgba(255,255,255,0.8);}
+.ls-sd-blue,.ls-btn-sd-blue:hover,.ls-btn-sd-blue:focus {box-shadow: 0px 0px 20px rgba(42,183,210,1);}
+.ls-btn-sd-blue,.ls-btn-sd-blue:active {box-shadow: 0px 0px 5px rgba(42,183,210,0.8);}
+.ls-sd-red,.ls-btn-sd-red:hover,.ls-btn-sd-red:focus {box-shadow: 0px 0px 20px rgba(232,18,18,1);}
+.ls-btn-sd-red,.ls-btn-sd-red:active {box-shadow: 0px 0px 5px rgba(232,18,18,0.8);}
+.ls-sd-orange,.ls-btn-sd-orange:hover,.ls-btn-sd-orange:focus {box-shadow: 0px 0px 20px rgba(228,191,17,1);}
+.ls-btn-sd-orange,.ls-btn-sd-orange:active {box-shadow: 0px 0px 5px rgba(228,191,17,0.8);}
+.ls-sd-green,.ls-btn-sd-green:hover,.ls-btn-sd-green:focus {box-shadow: 0px 0px 20px rgba(35,191,72,1);}
+.ls-btn-sd-green,.ls-btn-sd-green:active {box-shadow: 0px 0px 5px rgba(35,191,72,0.8);}
