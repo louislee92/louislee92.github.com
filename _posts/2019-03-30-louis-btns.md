@@ -275,7 +275,7 @@ css3的```border-radius```属性可以实现圆角边框，如下面几个按钮
 </p>
 
 ```html
-<a class="ls-btn ls-btn-bdr ls-btn-bg-blue ls-btn-clr-white">这么胖嘟嘟的</a>
+<a class="ls-btn ls-btn-bdr ls-btn-bg-blue ls-btn-clr-white">圆角的</a>
 ```
 
 ```css
@@ -299,7 +299,7 @@ css3的```border-radius```属性可以实现圆角边框，如下面几个按钮
 
 仅仅把之前的背景色和颜色类做了修改，就像下面代码这样
 ```html
-<a class="ls-btn ls-btn-bdr ls-btn-bg-blue ls-btn-clr-white">这么胖嘟嘟的</a>
+<a class="ls-btn ls-btn-bdr ls-btn-bg-blue ls-btn-clr-white">正正</a>
 ```
 
 
