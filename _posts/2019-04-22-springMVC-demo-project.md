@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spring MVC 项目配置与Jar包小结"
-categories: css
+categories: java
 tags: 
   - Spring MVC
 ---
