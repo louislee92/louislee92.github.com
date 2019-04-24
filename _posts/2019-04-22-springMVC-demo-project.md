@@ -6,7 +6,7 @@ tags:
   - Spring MVC
 ---
 
-Spring MVC是类似Struts2的Web矿建，也是spring框架的一部分。
+Spring MVC是类似Struts2的Web框架，也是spring框架的一部分。
 
 ## 几个基础的配置文件
 
