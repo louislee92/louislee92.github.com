@@ -214,7 +214,7 @@ public class HelloController {
 ```
 
 
-### 接收Json数据，并返回JSON数据
+### 重定向路由
 
 ```java
     /**
