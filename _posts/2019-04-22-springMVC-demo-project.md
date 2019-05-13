@@ -127,6 +127,15 @@ C:\Users\Louis Lee\IdeaProjects\HelloWorld\lib\jackson-core-2.9.8.jar
 C:\Users\Louis Lee\IdeaProjects\HelloWorld\lib\jackson-databind-2.9.8.jar
 ```
 
+### Apache POI
+
+对Microsoft Office格式档案读写
+
+```
+C:\Users\Louis Lee\IdeaProjects\HelloWorld\lib\jackson-annotations-2.9.8.jar
+C:\Users\Louis Lee\IdeaProjects\HelloWorld\lib\jackson-core-2.9.8.jar
+C:\Users\Louis Lee\IdeaProjects\HelloWorld\lib\jackson-databind-2.9.8.jar
+```
 
 ## Spring MVC Controller
 
