@@ -231,3 +231,17 @@ article {
     box-shadow: 0 3px 10px rgba(0,0,0,.1);
     padding: 20px;
 }
+
+/**
+ * table
+ */
+table {
+	border-spacing: 0px;
+	border-left:1px solid $text-color-dark;
+	border-top:1px solid $text-color-dark;
+}
+table td, table th {
+	padding: 3px;
+	border-right:1px solid $text-color-dark;
+	border-bottom:1px solid $text-color-dark;
+}
