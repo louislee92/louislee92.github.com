@@ -27,7 +27,7 @@ markdown: kramdown
 exclude: [CNAME]
 
 # Profile settings
-username: Go Through the Field
+username: 现世通行
 
 # plugins
 plugins: [jekyll-paginate, jemoji]
