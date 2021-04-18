@@ -13,26 +13,10 @@
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
 		  
           {% if site.weibo_username %}
           <li>
             {% include icon-weibo.html url=site.weibo_url username=site.weibo_username %}
-          </li>
-          {% endif %}
-          {% if site.csdn_username %}
-          <li>
-            {% include icon-csdn.html url=site.csdn_url username=site.csdn_username %}
           </li>
           {% endif %}
         </ul>

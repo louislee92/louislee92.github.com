@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 路易斯·李
+title: 「现世通行」
 email: louislee92@163.com
 description: > # this means to ignore newlines until "baseurl:"
-  我瞻四方，蹙蹙靡所骋！
+  东方同人桌游
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://louislee92.com" # the base hostname & protocol for your site
@@ -19,15 +19,15 @@ github_username:  louislee92
 # 
 csdn_url: https://blog.csdn.net/louislee92
 csdn_username: 纠结者路易斯李
-weibo_url: https://weibo.com/louislee2013/
-weibo_username: 路易斯李李李
+weibo_url: https://space.bilibili.com/31437463
+weibo_username: 现世通行
 
 # Build settings
 markdown: kramdown
 exclude: [CNAME]
 
 # Profile settings
-username: Louis Lee
+username: Go Through the Field
 
 # plugins
 plugins: [jekyll-paginate, jemoji]
