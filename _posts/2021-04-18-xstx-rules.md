@@ -79,4 +79,4 @@ QQ群：516825003
 </center>
 
 
-
+[欢迎各位玩家一起修改完善](https://github.com/louislee92/louislee92.github.com/blob/master/_posts/2021-04-18-xstx-rules.md)
