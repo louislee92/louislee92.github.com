@@ -17,8 +17,22 @@ center {text-align: center;}
 red {color: #E6A23C;display: block;}
 green {color: green}
 chapter {display: block; text-align:center;margin-bottom: 10px; font-size: 30px; font-weight: bold;}
-.member {display: inline-block; width: 100px; padding: 10px 40px; background: rgb(0 255 255 / 32%); color: white; margin-right: 10px;margin-bottom: 10px; text-align: center;}
+.member {display: inline-block; width: 100px; padding: 10px;padding-left: 50px; padding-right:20px;background: rgb(0 255 255 / 32%); color: white; margin-right: 10px;margin-bottom: 10px; text-align: center; position: relative;overflow:hidden;}
 .member .name, .member .job {display: block;}
+    .member .name{font-weight: bold;}
+    .member .job { 
+        position: absolute;
+    top: -5px;
+    left: -35px;
+    width: 100px;
+    height: 40px;
+    line-height: 50px;
+    transform: rotate(-45deg);
+    background: cyan;
+    text-align: center;
+    font-size: 80%;
+    color: black;
+    }
 small {font-size: 60%}
 </style>
 
@@ -102,8 +116,9 @@ $("#xstx_video").height(height);
 </div>
 <div class="member">
 <span class="name">Central_ISO</span>
-<span class="job">技美</span>
+<span class="job">美术</span>
 </div>
+
 
 <div class="member">
 <span class="name">图钉</span>
