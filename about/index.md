@@ -34,40 +34,70 @@ chapter {display: block; text-align:center;margin-bottom: 10px; font-size: 30px;
     color: black;
     }
 small {font-size: 60%}
+
+.post-content  h1,
+.post-content  h2,
+.post-content  h3 {
+  text-align: left;
+  border-bottom: 1px solid;
+  border-image: -o-linear-gradient(left, red 20%, blue 40%, green 60%, black 80%) 100 100 100 100;
+  border-image: -ms-linear-gradient(left, red 20%, blue 40%, green 60%, black 80%) 100 100 100 100;
+  border-image: -moz-linear-gradient(left, red 20%, blue 40%, green 60%, black 80%) 100 100 100 100;
+  border-image: -webkit-linear-gradient(left, rgba(255,255,255,1)  0%,  rgba(255,255,255,0) 50%) 100 100 100;
+}
+.list{
+display: flex; align-items: center; font-weight: bolder; margin-bottom: 1rem;
+background: linear-gradient(to right, rgba(255,255,255,0.1) ,  rgba(255,255,255,0));
+background: -webkit-linear-gradient(to right, rgba(255,255,255,0.1) ,  rgba(255,255,255,0));
+}
+.list-num {
+width: 3rem; height: 3rem; background: #f9c7008c; text-align: center; line-height: 3rem;
+font-weight: bold; font-size: 150%; margin-right: 1rem;
+}
+.item1 {
+background: rgba(255,255,255,0.1);padding: 1rem; margin-bottom: 1rem;
+}
 </style>
 
 
-## 社团简介
+# 社团简介
 
-<img  height=40 src="/img/xstx/xstx-square.png"/>
-
-**社团名称**：现世通行
-
-**活动内容**：桌游开发、手游开发、东方周边手工
-
-**主催**：AI、路易斯
-
-**活动地区**：中国大陆-江苏
+社团的名字叫做【现世通行】，主要内容有桌游开发、手游开发、东方周边手工等。社团主催是AI、路易斯，常年活动于南京周边。
 
 本社团是秘封主题的东方同人剧情爱好者社团。我们团是由几位技术宅建立的，本着研究、合作、交流、探新的相关精神，欢迎相关爱好者一起交流。
 
-## 作品简介
+# 作品简介
 
-### 《现世通行》桌游实体卡 <small class='color1'>通贩售卖中...</small>
+<div class="list">
+<div class="list-num">1</div> 现世通行桌游实体卡牌
+</div>
 
-<center>
-<img src="/img/xstx/card3.png">
-</center>
+<div style="display: flex; margin-bottom: 1rem;">
+<div style="max-width: 6rem;;margin-right: 1rem;"><img src='https://static-yz-cdn.c-t.work/QN_FOG_cowtransfer-file-019a8d86-9d4d-4796-9ee1-cfd52fec2033%252F%25E7%259B%2592%25E5%25AD%2590%25E6%25AD%25A3%25E9%259D%25A2.png?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2Mzc0ODk1MTY0MjEifQ.2RHkmd2J6hLo4VXNOAfMrPQbCdzWuDl-cgaBMq03ofg&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTF8MjF8MTgifQ.HWlf-UcMz6soIUf4ZElkbgp7EUdwpvCXEd5vRF0UxAshttps://static-yz-cdn.c-t.work/QN_FOG_cowtransfer-file-019a8d86-9d4d-4796-9ee1-cfd52fec2033%252F%25E7%259B%2592%25E5%25AD%2590%25E6%25AD%25A3%25E9%259D%25A2.png?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2Mzc0ODk1MTY0MjEifQ.2RHkmd2J6hLo4VXNOAfMrPQbCdzWuDl-cgaBMq03ofg&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTF8MjF8MTgifQ.HWlf-UcMz6soIUf4ZElkbgp7EUdwpvCXEd5vRF0UxAs&user=38be7746-59c9-4f54-992f-49f81d1dce0e&ut=0&rt=0&rk=ff_6a486e8c-343d-4849-9ab8-67f9bda2663c&owner=38be7746-59c9-4f54-992f-49f81d1dce0e&tid=287ea7ef-5843-4225-81a9-6d8e24840e2e&batch=1637489516396&attname=%E7%9B%92%E5%AD%90%E6%AD%A3%E9%9D%A2.png'></div>
+<div>
+毛线轻策桌游，聚会破冰神器。玩家将扮演秘封俱乐部新成员，误入到幻想乡，且需要在城管的帮助下避免抽到通行，一直留到最后就是赢家哦！
+<br/>
+桌游实体卡牌先后分别印制了便携铁盒版、布纹精装版、PVC铁盒精装版和扑克简装版4个版本。规则说明书可戳：<a href="http://louislee92.com/default/2021/10/05/xstx-rules-5.0.html">《现世通行规则说明书V5.0》</a>
+</div>
+</div>
 
-现世通行实体卡桌游，毛线轻策桌游，聚会破冰神器哦，[官方店传送门](https://item.taobao.com/item.htm?id=643184451728)，[囧仙店传送门](https://item.taobao.com/item.htm?id=651108429543)
 
-### 《现世通行》安卓端手游 <small class='color2'>紧张开发中..</small>
-[现世通行](https://www.bilibili.com/video/BV1rb4y1r75S)的开发初衷就是让各位车车人在有限的时间里，快速和身边好友们来场策略东方元素卡牌战~不用过久地等待，只要你想玩随时开局，人数自适应2到5人的说。
 
-帮助同好在快节奏的逛展之余，快速与周边友人碰撞出激情火花 ！
+<div class="list">
+<div class="list-num">2</div> 现世通行线上版游戏
+</div>
+<div style="display: flex;margin-bottom: 1rem;">
+<div style="max-width: 6rem;;margin-right: 1rem;"><img src="https://static-yz-cdn.c-t.work/QN_FOG_cowtransfer-file-9b24b36c-3ae6-4c73-a48a-db66163ce676%252FAPP%25E5%259B%25BE%25E6%25A0%2587%25E5%259B%25BE%25E7%2589%2587.png?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2Mzc0ODkzNDUwNjEifQ.Ss0O2xVxs9D4hWem1m9IMWGZQRhP9x4e1nSbiwXDDQQ&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTF8MjF8MTgifQ.HWlf-UcMz6soIUf4ZElkbgp7EUdwpvCXEd5vRF0UxAshttps://static-yz-cdn.c-t.work/QN_FOG_cowtransfer-file-9b24b36c-3ae6-4c73-a48a-db66163ce676%252FAPP%25E5%259B%25BE%25E6%25A0%2587%25E5%259B%25BE%25E7%2589%2587.png?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2Mzc0ODkzNDUwNjEifQ.Ss0O2xVxs9D4hWem1m9IMWGZQRhP9x4e1nSbiwXDDQQ&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTF8MjF8MTgifQ.HWlf-UcMz6soIUf4ZElkbgp7EUdwpvCXEd5vRF0UxAs&user=38be7746-59c9-4f54-992f-49f81d1dce0e&ut=0&rt=0&rk=ff_2b7e7aae-3407-42e9-b0fb-1c4d6bdccc99&owner=38be7746-59c9-4f54-992f-49f81d1dce0e&tid=e84c1369-6cdc-4de1-aa6f-4b36e3175a16&batch=1637489345037&attname=APP%E5%9B%BE%E6%A0%87%E5%9B%BE%E7%89%87.png"></div>
+<div>
+线上版游戏以5.0规则说明书为基础，做了一些改动以提高线上游玩的趣味性。目前游戏仅支持安卓和PC端，且可以互通数据。<br/>
+安卓端可以在taptap搜索，PC端目前需要加入官方群获取。详细情况可戳：<a href="http://louislee92.com/default/2021/11/12/xstx-game.html">《现世通行OL封测啦~》</a>
+</div>
+</div>
 
-### 东方手工周边 <small class='color1'>篆刻章、折扇等</small>
 
+<div class="list">
+<div class="list-num">3</div> <span style="margin-right: 1rem;">东方手工周边</span> <small class="color4">篆刻、折扇、钥匙扣等</small>
+</div>
 
 我们社团一般直参THO，按会长有空的时间概率性报名江苏周边展区(大概隔4个月)，且每次出展必带来相关福利，手工艺品每届都展出不同哦~相关请关注现世通行B博动态
 
@@ -84,31 +114,32 @@ $("#xstx_video").height(height);
 [更多视频传送门](https://space.bilibili.com/31437463/dynamic)
 
 
-## 参展信息
-
-### 武汉THO01 <small>2021年4月4日</small>
-第六届武漢THONLY 浮燈華苑
-
-地点：武汉 北辰光谷里
-
-摊位号：07
-
-### 安徽THO06 <small>2021年5月2日</small>
-安徽THO 东方红馆梦
-
-地点：合肥市 皇城御园大酒店
-
-摊位号：E2
-
-
-### 上海THO11 <small>2021年8月7日 <span class='color4'>延期</span></small>
-
-[魅知幻想博览会](https://t.bilibili.com/topic/name/魅知幻想博览会/feed)2021开展前在[B博转发动态](https://t.bilibili.com/553235781077943175?tab=2)将有机率抽绝版纪念卡一盒（全世界仅产了2盒）
 
 
 
 
-## 社团主要成员
+# 社团通贩
+
+[官方店传送门](https://item.taobao.com/item.htm?id=643184451728)，[囧仙店传送门](https://item.taobao.com/item.htm?id=651108429543)
+
+# 参展信息
+
+<div class="item1">
+<p>2021年4月4日 武汉THO01</p>
+<p>第六届武漢THONLY 浮燈華苑</p>
+<p>地点：武汉 北辰光谷里</p>
+<p>摊位号：07</p>
+</div>
+
+<div class="item1">
+<p>2021年5月2日 安徽THO06</p>
+<p>东方红馆梦</p>
+<p>地点：合肥市 皇城御园大酒店</p>
+<p>摊位号：E2</p>
+</div>
+
+
+# 社团主要成员
 
 <div class="member">
 <span class="name">AI</span>
@@ -132,8 +163,12 @@ $("#xstx_video").height(height);
 <span class="name">路易斯</span>
 <span class="job">会长</span>
 </div>
+<div class="member">
+<span class="name">二上優</span>
+<span class="job">测试</span>
+</div>
 
-#### 本社分组
+<strong>本社分组</strong>
 
 **技术组**：以<span class='color5'>古风手工周边</span>为主的手工艺制作。组长是程序员+手艺人。
 
@@ -149,14 +184,14 @@ $("#xstx_video").height(height);
 
 
 
-## 加入我们
+# 加入我们
 
-<span class='color1'>现世通行同人社团期待您的加入</span>
+现世通行同人社团期待您的加入
 
 QQ群：516825003
 
 <center>
-<img src="http://louislee92.com/img/xstx-qq.jpg" style="max-width: 500px; width: 100%;"/>
+<img src="https://static-yz-cdn.c-t.work/QN_FOG_cowtransfer-file-a3e051e2-d448-4f16-9d91-f4f67b99894b%252F%25E7%258E%25B0%25E4%25B8%2596%25E9%2580%259A%25E8%25A1%258C%25E7%25BE%25A4%25E8%2581%258A%25E4%25BA%258C%25E7%25BB%25B4%25E7%25A0%2581-%25E4%25BB%25BF%25E5%25A4%258F%25E4%25B9%25A1%25E5%2590%2588%25E5%25B9%25B6.png?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2Mzc0Njk1NDM4MzIifQ.x3Cezj3K2YYReinDykAv6YNh_FROHsR3Cn4z4yvaz6E&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTF8MjF8MTIifQ.z3N_qVaD8s-gADLGKYDtNK5_wAJJlIDPeoa0_1Bx_NE&user=38be7746-59c9-4f54-992f-49f81d1dce0e&ut=4&rt=1&rk=FolderFile_988bced1-ee1e-41bc-a85f-9913be8dc9c6&owner=38be7746-59c9-4f54-992f-49f81d1dce0e&imageMogr2/thumbnail/1280/format/jpg/blur/1x0/quality/75|imageslim">
 </center>
 
 
