@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "<span class='hidden'>现世通行月虹云市场摊宣</span>"
+title: "现世通行月虹云市场摊宣"
 categories: default
 tags: 
   - 现世通行	
@@ -8,7 +8,7 @@ tags:
 ---
 
 <style>
-.hidden{display: none;}
+.post > .post-header > .post-title {display: none;}
 .title {text-align: center; }
 .strong1 {font-style: normal; color: #ffc90b; }
 .para { font-size: 1.5rem; font-weight: bold; }
