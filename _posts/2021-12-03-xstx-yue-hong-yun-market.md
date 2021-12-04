@@ -427,8 +427,15 @@ function doMove(obj, json, fnEnd){
 <p class='para'><i class='start'></i>除了实体卡，我们社团还在<i class='strong1'>开发手游线上版</i>，详情可进官方群咨询获取测试资格~</p>
 
 <div style='margin-top: .5rem;'>
-<iframe src="//player.bilibili.com/player.html?aid=421890809&bvid=BV1o3411t7Bb&cid=447906856&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<iframe  id="xstx_video" src="//player.bilibili.com/player.html?aid=421890809&bvid=BV1o3411t7Bb&cid=447906856&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 </div>
+
+<script>
+var width = $(".post-content").width();
+var height = width * 513 / 755;
+$("#xstx_video").width(width);
+$("#xstx_video").height(height);
+</script>
 
 <div style='margin-bottom: 5rem;'></div>
 
