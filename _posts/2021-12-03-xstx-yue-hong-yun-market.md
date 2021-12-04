@@ -26,7 +26,7 @@ tags:
 
 #top .small li.hove{filter:alpha(opacity=100);opacity:1;}
 
-#box{width:100%;height:300px;float:left;background:url(images/banna.jpg) no-repeat center;overflow:hidden;position:relative;}
+#box{width:100%;height:300px;float:left;background:url(images/banna.jpg) no-repeat center;position:relative;}
 
 #box .bg{width:100%;height:290px;background:#000;filter:alpha(opacity=70); opacity:0.7; position:absolute; top:132px; left:0px;}
 
@@ -34,9 +34,21 @@ tags:
 
 #list ul {margin:0px;padding:0px; float:left;}
 
-#list li{width:100px;border:3px solid #000;position:absolute;list-style-type:none;overflow:hidden;cursor:pointer;}
+#list li{width:100px;border:none;position:absolute;list-style-type:none;overflow:hidden;cursor:pointer;}
+#list li.hove {
+	box-shadow: 0px 0px 20px #fff;
+	border: 1px solid #555;
+	animation: mymove 2s infinite linear;
+}
+@keyframes mymove
+{
+0% {box-shadow: 0px 0px 20px #fff;}
+50% {box-shadow: 0px 0px 10px red;}
+100% {box-shadow: 0px 0px 20px #fff;}
+}
 
-#list li img{width:100%;height:100%;vertical-align:top;}
+
+#list li img{width:100%;height:100%;vertical-align:bottom;}
 
 #list li div{width:100%;height:100%;background:#000;filter:alpha(opacity=70); opacity:0.7; position:absolute; z-index:1; top:0px; left:0px;}
 
