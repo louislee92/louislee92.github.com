@@ -3,8 +3,8 @@ layout: page
 title: "现世通行月虹云市场摊宣"
 categories: default
 tags: 
-  - 现世通行	
-  - 社团简介
+  - 月虹云市场
+  - 摊宣
 ---
 
 <style>
