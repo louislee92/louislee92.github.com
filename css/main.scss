@@ -50,12 +50,11 @@ $on-laptop:        8rem;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
+//@mixin media-query($device) {
+//    @media screen and (max-width: $device) {
+//        @content;
+//    }
+//}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
