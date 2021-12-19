@@ -2,9 +2,12 @@
 /* logo */
 .img-logo {
 	display: inline-block;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: .56rem;
+    height: .56rem;
     background: url('https://static-yz-cdn.c-t.work/QN_FOG_cowtransfer-file-15bf9066-85c1-4108-942f-4ad9947b2201%252F%25E7%258E%25B0%25E4%25B8%2596%25E9%2580%259A%25E8%25A1%258CLOGO100x100.png?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2Mzk3NDYwMzUyMjYifQ.twlXfK5ChDbaLFZu6snnT_2iVS2p-zw-aIKxsdEVQd0&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTJ8MTd8MjEifQ.C-VKUd0jT0u6G_7_H0Vf32NIqBL5A5IXai5uWr4mRBIhttps://static-yz-cdn.c-t.work/QN_FOG_cowtransfer-file-15bf9066-85c1-4108-942f-4ad9947b2201%252F%25E7%258E%25B0%25E4%25B8%2596%25E9%2580%259A%25E8%25A1%258CLOGO100x100.png?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2Mzk3NDYwMzUyMjYifQ.twlXfK5ChDbaLFZu6snnT_2iVS2p-zw-aIKxsdEVQd0&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTJ8MTd8MjEifQ.C-VKUd0jT0u6G_7_H0Vf32NIqBL5A5IXai5uWr4mRBI&user=38be7746-59c9-4f54-992f-49f81d1dce0e&ut=0&rt=0&rk=ff_0cb1b611-f031-48db-81ea-e3e6dd1c3384&owner=38be7746-59c9-4f54-992f-49f81d1dce0e&tid=0a0b2def-c9a0-4506-9c6e-707e1b433427&batch=1639746035198&attname=%E7%8E%B0%E4%B8%96%E9%80%9A%E8%A1%8CLOGO100x100.png');
     background-size: 100% 100%;
 	position: absolute;
 }
+
+/* 布局 */
+.flex1 {display: flex;align-items: center;justify-content: space-around;}

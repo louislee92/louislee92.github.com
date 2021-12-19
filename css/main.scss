@@ -7,12 +7,12 @@
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", "微软雅黑", SimSun, "宋体", STXihei, "华文细黑", Heiti, "黑体", sans-serif;
-$base-font-size:   16px;
+$base-font-size:   .16rem;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     .3rem;
 
 $text-color:       #ddd;
 $text-color-light: lighten($text-color, 35%);
@@ -36,10 +36,10 @@ $blank-color-light: lighten($blank-color, 35%);
 $blank-color-dark:  darken($blank-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    8rem;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:          6rem;
+$on-laptop:        8rem;
 
 
 
@@ -62,5 +62,6 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "kit"
 ;

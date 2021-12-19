@@ -11,9 +11,9 @@ tags:
 .post > .post-header > .post-title {display: none;}
 .title {text-align: center; }
 .strong1 {font-style: normal; color: #ffc90b; }
-.para { font-size: 1.5rem; font-weight: bold; }
-.para .start {display: inline-block; width:2rem;}
-.work1 {width: 100%; height: 20rem;}
+.para { font-size: .25rem; font-weight: bold; }
+.para .start {display: inline-block; width:.2rem;}
+.work1 {width: 100%; height: .2rem;}
 
 
 #top{width:100%;height:139px;float:left;background:url(images/top.jpg) no-repeat center;position:relative;}
@@ -78,15 +78,15 @@ tags:
 
 article.post {overflow: hidden;}
 .tips {
-   height: 2rem;
-    width: 25rem;
+    height: .4rem;
+    line-height: .4rem; 
+    width: 2rem;
     background: #760000; color: white;
     position: absolute;
     transform: rotate(-45deg);
-    left: -11rem;
-    top: -1rem;
-    text-align: center;
-    line-height: 2rem; font-size: .17rem;: 
+    left: -0.75rem;
+    top: -.1rem;
+    text-align: center;font-size: .12rem;: 
 }
 
 </style>
@@ -438,7 +438,7 @@ function doMove(obj, json, fnEnd){
 
 <p class='para'><i class='start'></i>除了实体卡，我们社团还在<i class='strong1'>开发手游线上版</i>，详情可进官方群咨询获取测试资格~</p>
 
-<div style='margin-top: .5rem;'>
+<div style='margin-top: .1rem;'>
 <iframe  id="xstx_video" src="//player.bilibili.com/player.html?aid=421890809&bvid=BV1o3411t7Bb&cid=447906856&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 </div>
 
@@ -449,6 +449,6 @@ $("#xstx_video").width(width);
 $("#xstx_video").height(height);
 </script>
 
-<div style='margin-bottom: 5rem;'></div>
+<div style='margin-bottom: .5rem;'></div>
 
 
