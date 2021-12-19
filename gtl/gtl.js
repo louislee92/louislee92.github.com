@@ -14,7 +14,7 @@ function randomNum(minNum,maxNum){
     }
 }
 // 配置参数
-var size = 1,   // 卡牌初始大小
+var size = 2,   // 卡牌初始大小
     fd = 3,     // 卡牌变化幅度
     timerDelay = 1000,  // 定时器（更新频率）间隔
     timerDelay2 = 400, // 定时器（生成卡牌）间隔2
