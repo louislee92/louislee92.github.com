@@ -36,25 +36,24 @@ $blank-color-light: lighten($blank-color, 35%);
 $blank-color-dark:  darken($blank-color, 25%);
 
 // Width of the content area
-$content-width:    8rem;
+$content-width:    800px;
 
-$on-palm:          6rem;
-$on-laptop:        8rem;
+$on-palm:          600px;
+$on-laptop:        800px;
 
-
-
+// 定义媒体查询函数
+@mixin media-query($device) {
+        @media screen and (max-width: $device) {
+                @content;
+        }
+}
 // Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-//@mixin media-query($device) {
-//    @media screen and (max-width: $device) {
-//        @content;
-//    }
-//}
+@include media-query($on-palm) {
+     .wrapper {
+         padding-right: $spacing-unit / 2;
+         padding-left: $spacing-unit / 2;
+     }
+ }
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
