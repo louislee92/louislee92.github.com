@@ -73,7 +73,7 @@ background: rgba(255,255,255,0.1);padding: .1rem; margin-bottom: .1rem;
 </div>
 
 <div style="display: flex; margin-bottom: .1rem;">
-<div style="max-width: 1rem;margin-right: .1rem;"><img src='https://static-yz-cdn.c-t.work/QN_FOG_cowtransfer-file-019a8d86-9d4d-4796-9ee1-cfd52fec2033%252F%25E7%259B%2592%25E5%25AD%2590%25E6%25AD%25A3%25E9%259D%25A2.png?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2Mzc0ODk1MTY0MjEifQ.2RHkmd2J6hLo4VXNOAfMrPQbCdzWuDl-cgaBMq03ofg&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTF8MjF8MTgifQ.HWlf-UcMz6soIUf4ZElkbgp7EUdwpvCXEd5vRF0UxAshttps://static-yz-cdn.c-t.work/QN_FOG_cowtransfer-file-019a8d86-9d4d-4796-9ee1-cfd52fec2033%252F%25E7%259B%2592%25E5%25AD%2590%25E6%25AD%25A3%25E9%259D%25A2.png?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2Mzc0ODk1MTY0MjEifQ.2RHkmd2J6hLo4VXNOAfMrPQbCdzWuDl-cgaBMq03ofg&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTF8MjF8MTgifQ.HWlf-UcMz6soIUf4ZElkbgp7EUdwpvCXEd5vRF0UxAs&user=38be7746-59c9-4f54-992f-49f81d1dce0e&ut=0&rt=0&rk=ff_6a486e8c-343d-4849-9ab8-67f9bda2663c&owner=38be7746-59c9-4f54-992f-49f81d1dce0e&tid=287ea7ef-5843-4225-81a9-6d8e24840e2e&batch=1637489516396&attname=%E7%9B%92%E5%AD%90%E6%AD%A3%E9%9D%A2.png'></div>
+<div style="max-width: 1rem;margin-right: .1rem;"><img src='/img/xstx/box-top.png'></div>
 <div>
 毛线轻策桌游，聚会破冰神器。玩家将扮演秘封俱乐部新成员，误入到幻想乡，且需要在城管的帮助下避免抽到通行，一直留到最后就是赢家哦！
 <br/>
@@ -87,7 +87,7 @@ background: rgba(255,255,255,0.1);padding: .1rem; margin-bottom: .1rem;
 <div class="list-num">2</div> 现世通行线上版游戏
 </div>
 <div style="display: flex;margin-bottom: .1rem;">
-<div style="max-width: 1rem;;margin-right: .1rem;"><img src="https://static-yz-cdn.c-t.work/QN_FOG_cowtransfer-file-9b24b36c-3ae6-4c73-a48a-db66163ce676%252FAPP%25E5%259B%25BE%25E6%25A0%2587%25E5%259B%25BE%25E7%2589%2587.png?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2Mzc0ODkzNDUwNjEifQ.Ss0O2xVxs9D4hWem1m9IMWGZQRhP9x4e1nSbiwXDDQQ&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTF8MjF8MTgifQ.HWlf-UcMz6soIUf4ZElkbgp7EUdwpvCXEd5vRF0UxAshttps://static-yz-cdn.c-t.work/QN_FOG_cowtransfer-file-9b24b36c-3ae6-4c73-a48a-db66163ce676%252FAPP%25E5%259B%25BE%25E6%25A0%2587%25E5%259B%25BE%25E7%2589%2587.png?t-s=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6Imlsb3ZlY293dHJhbnNmZXIyMDIxXzE2Mzc0ODkzNDUwNjEifQ.Ss0O2xVxs9D4hWem1m9IMWGZQRhP9x4e1nSbiwXDDQQ&t-c=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJndWlkK3RpbWVzdGFtcCI6IjIwMjF8MTF8MjF8MTgifQ.HWlf-UcMz6soIUf4ZElkbgp7EUdwpvCXEd5vRF0UxAs&user=38be7746-59c9-4f54-992f-49f81d1dce0e&ut=0&rt=0&rk=ff_2b7e7aae-3407-42e9-b0fb-1c4d6bdccc99&owner=38be7746-59c9-4f54-992f-49f81d1dce0e&tid=e84c1369-6cdc-4de1-aa6f-4b36e3175a16&batch=1637489345037&attname=APP%E5%9B%BE%E6%A0%87%E5%9B%BE%E7%89%87.png"></div>
+<div style="max-width: 1rem;;margin-right: .1rem;"><img src="/img/xstx-app-ol.png"></div>
 <div>
 线上版游戏以5.0规则说明书为基础，做了一些改动以提高线上游玩的趣味性。目前游戏仅支持安卓和PC端，且可以互通数据。<br/>
 安卓端可以在taptap搜索，PC端目前需要加入官方群获取。详细情况可戳：<a href="http://louislee92.com/default/2021/11/12/xstx-game.html">《现世通行OL封测啦~》</a>
