@@ -77,7 +77,7 @@ background: rgba(255,255,255,0.1);padding: .1rem; margin-bottom: .1rem;
 <div>
 毛线轻策桌游，聚会破冰神器。玩家将扮演秘封俱乐部新成员，误入到幻想乡，且需要在城管的帮助下避免抽到通行，一直留到最后就是赢家哦！
 <br/>
-桌游实体卡牌先后分别印制了便携铁盒版、布纹精装版、PVC铁盒精装版和扑克简装版4个版本。规则说明书可戳：<a href="http://louislee92.com/default/2021/10/05/xstx-rules-5.0.html">《现世通行规则说明书V5.0》</a>
+桌游实体卡牌先后分别印制了便携铁盒版、布纹精装版、PVC铁盒精装版和扑克简装版4个版本。规则说明书可戳：<a href="/default/2021/10/05/xstx-rules-5.0.html">《现世通行规则说明书V5.0》</a>
 </div>
 </div>
 
@@ -90,7 +90,7 @@ background: rgba(255,255,255,0.1);padding: .1rem; margin-bottom: .1rem;
 <div style="max-width: 1rem;;margin-right: .1rem;"><img src="/img/xstx-app-ol.png"></div>
 <div>
 线上版游戏以5.0规则说明书为基础，做了一些改动以提高线上游玩的趣味性。目前游戏仅支持安卓和PC端，且可以互通数据。<br/>
-安卓端可以在taptap搜索，PC端目前需要加入官方群获取。详细情况可戳：<a href="http://louislee92.com/default/2021/11/12/xstx-game.html">《现世通行OL封测啦~》</a>
+安卓端可以在taptap搜索，PC端目前需要加入官方群获取。详细情况可戳：<a href="/default/2021/11/12/xstx-game.html">《现世通行OL封测啦~》</a>
 </div>
 </div>
 
