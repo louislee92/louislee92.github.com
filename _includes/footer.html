@@ -2,32 +2,29 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.username }}</h2>
+    <h2 class="footer-heading">现世通行</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope-o"></i> {{ site.email }}</a></li>
+          <li><a href="https://github.com/louislee92"><i class="fa fa-github"></i> Gtihub</a></li>
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
-		  
-          {% if site.weibo_username %}
           <li>
-            {% include icon-weibo.html url=site.weibo_url username=site.weibo_username %}
+            <li><a href="https://space.bilibili.com/31437463"><i class="fa fa-thumbs-up"></i> B站</a></li>
           </li>
-          {% endif %}
         </ul>
       </div>
 
-      <div class="footer-col footer-col-3">
+      <!-- <div class="footer-col footer-col-3">
         <p><i class="fa fa-yelp"></i> {{ site.description }}</p>
-		<!--
+
 		<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-		-->
-      </div>
+		
+      </div> -->
     </div>
 
   </div>
