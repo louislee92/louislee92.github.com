@@ -160,6 +160,17 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
+.footer-other {
+    color: grey;
+
+    .footer-icp {
+        font-size: 80%;
+        a {color: inherit}
+    }
+}
+
+
+
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
