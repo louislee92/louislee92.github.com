@@ -1,0 +1,52 @@
+// 布局方式
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.flex-evenly {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.flex-between {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// 响应式
+
+/*宽度小于768  max-width:768px:说明当前屏幕的最大值为768px*/
+@media screen and (max-width: 768px) and (min-width: 0px){
+  /*媒体查询是用来设置样式的 当实际的屏幕大小满足条件时就执行样式 */
+  html {
+    font-size: 70px;
+  }
+}
+
+/* w  768~992    blue */
+@media screen and (min-width: 768px) and (max-width: 992px){
+  html {
+    font-size: 80px;
+  }
+}
+/*  w  992~1200  pink*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  html {
+    font-size: 90px;
+  }
+}
+/*W  >1200:     purple*/
+@media screen and (min-width: 1200px){
+  html {
+    font-size: 100px;
+  }
+}
