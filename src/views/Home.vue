@@ -180,6 +180,14 @@ export default {
       background: linear-gradient(30deg,#514a9d,#24c6dc);
       /* 默认沿Z轴偏移100px */
       transform: translateZ(100px);
+      box-shadow: 0 0 .3rem #514a9d;
+      border-radius: .1rem;
+      animation: linear infinite flash2 5s;
+      transition: 2s all;
+      cursor: pointer;
+      &:hover {
+        border-radius: 2rem;
+      }
     }
     .card .box .con-box div h2{
       font-size: 20px;
@@ -220,5 +228,11 @@ export default {
   0% { background-position: 0 0, 0 0; opacity: 1; }
   99% { background-position: 100% 0, 0 0; opacity: 1; }
   100% { background-position: 100% 0, 0 0; opacity: 0; }
+}
+
+@keyframes flash2 {
+  0% {box-shadow: 0 0 .3rem #514a9d;}
+  50% {box-shadow: 0 0 .3rem #24c6dc;}
+  100% {box-shadow: 0 0 .3rem #514a9d;}
 }
 </style>
