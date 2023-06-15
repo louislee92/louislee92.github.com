@@ -6,7 +6,7 @@
     <div class="center">
       <div class="title">现世通行</div>
       <div class="line3">GO THROUGH THE LAND</div>
-      <div class="line1">东方同人桌游社团</div>
+      <div class="line1">东方Project同人社团</div>
       <div class="center-menu">
         <div class="card">
           <div class="box">
@@ -42,9 +42,9 @@
               <img src="https://img.paulzzh.tech/touhou/random?proxy=1&random=789" alt="">
             </div>
             <div class="con-box">
-              <div>
+              <div @click="clickOnItem(3)">
                 <h2>博客</h2>
-                <p>社团相关资讯，以及社团动态</p>
+                <p>社团相关资讯，以及社团状态</p>
               </div>
             </div>
           </div>
@@ -72,7 +72,11 @@ export default {
   computed: {
   },
   methods: {
-
+    clickOnItem(idx) {
+      if(idx == 3) {
+        window.open("http://blog.xstx.fun")
+      }
+    }
   }
 }
 </script>
