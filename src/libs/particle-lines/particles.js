@@ -1,6 +1,6 @@
 // 粒子与线条的特效
 let func = () => {
-  let max_particles = 150;
+  let max_particles = 30;
   let particles = [];
   let frequency = 200;
 // Popolate particles

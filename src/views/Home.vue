@@ -51,7 +51,7 @@
         </div>
       </div>
       <div class="line1">不科学现象文化研究讨论会</div>
-      <div class="line1">FROM 2021</div>
+      <div class="line1" style="padding-bottom: .2rem;">FROM 2021</div>
     </div>
   </div>
 </template>
@@ -74,7 +74,7 @@ export default {
   methods: {
     clickOnItem(idx) {
       if(idx == 3) {
-        window.open("http://blog.xstx.fun")
+        window.location.href = "http://blog.xstx.fun"
       }
     }
   }
@@ -211,6 +211,7 @@ export default {
   .title {
     font-size: .5rem;
     font-weight: bold;
+    padding-top: .2rem;
     &:hover {
       //color: red;
       text-shadow: 0 0 .05rem white;
