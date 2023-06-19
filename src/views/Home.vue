@@ -8,43 +8,15 @@
       <div class="line3">GO THROUGH THE LAND</div>
       <div class="line1">东方Project同人社团</div>
       <div class="center-menu">
-        <div class="card">
+        <div class="card" v-for="(item, index) in menus" @click="clickOnItem(item.id)">
           <div class="box">
             <div class="img-box">
-              <img src="https://img.paulzzh.tech/touhou/random?proxy=1&random=123" alt="">
+              <img :src="`https://img.paulzzh.tech/touhou/random?proxy=1&random=${item.id}`" alt="">
             </div>
             <div class="con-box">
               <div>
-                <h2>游戏</h2>
-                <p>同名桌游《现世通行》，毛线类桌游。</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <div class="img-box">
-              <img src="https://img.paulzzh.tech/touhou/random?proxy=1&random=456" alt="">
-            </div>
-            <div class="con-box">
-              <div>
-                <h2>作品</h2>
-                <p>1. 篆刻闲章</p>
-                <p>2. 题字折扇</p>
-                <p>3. 钥匙扣</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <div class="img-box">
-              <img src="https://img.paulzzh.tech/touhou/random?proxy=1&random=789" alt="">
-            </div>
-            <div class="con-box">
-              <div @click="clickOnItem(3)">
-                <h2>博客</h2>
-                <p>社团相关资讯，以及社团状态</p>
+                <h2>{{item.title}}</h2>
+                <p>{{item.detail}}</p>
               </div>
             </div>
           </div>
@@ -63,6 +35,11 @@ export default {
   name: 'Home',
   data() {
     return {
+      menus: [
+        {id: 'game', title: '游戏', detail: '社团同名桌游：现世通行'},
+        {id: 'work', title: '作品', detail: '篆刻闲章、手写折扇、钥匙扣等周边'},
+        {id: 'blog', title: '博客', detail: '社团相关资讯和社团动态'},
+      ]
     }
   },
   mounted() {
@@ -72,8 +49,8 @@ export default {
   computed: {
   },
   methods: {
-    clickOnItem(idx) {
-      if(idx == 3) {
+    clickOnItem(id) {
+      if(id == 'blog') {
         window.location.href = "http://blog.xstx.fun"
       }
     }
