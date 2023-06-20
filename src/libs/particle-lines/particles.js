@@ -1,3 +1,5 @@
+
+let tela = null
 // 粒子与线条的特效
 let func = () => {
   let max_particles = 30;
@@ -5,7 +7,7 @@ let func = () => {
   let frequency = 200;
 // Popolate particles
   popolate(max_particles);
-  var tela = document.createElement('canvas');
+  tela = document.createElement('canvas');
   tela.style = "position: absolute; top: 0; left: 0; z-index:-9;"
   var wW = window.innerWidth;
   var wH = window.innerHeight;
@@ -186,6 +188,10 @@ let func = () => {
 
 }
 
+let remove = () => {
+  tela.remove();
+}
+
 export default {
-  func
+  func, remove
 };

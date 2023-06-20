@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from "../views/Home";
+import Game from '../views/game/Game'
 
 Vue.use(Router)
 
@@ -17,6 +18,8 @@ const router = new Router({
   routes: [
       // 首页
     {path: '/', name: "Home", component: Home},
+    // 游戏
+    {path: '/game', name: "Game", component: Game},
   ]
 });
 

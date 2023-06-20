@@ -53,7 +53,13 @@ export default {
       if(id == 'blog') {
         window.location.href = "http://blog.xstx.fun"
       }
+      else if(id == 'game') {
+        this.$router.push({path: '/game'});
+      }
     }
+  },
+  destroyed() {
+    particles.remove();
   }
 }
 </script>
