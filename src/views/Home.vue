@@ -96,7 +96,7 @@ export default {
     .menu-item {
       border-radius: 0;
       padding: .05rem .1rem;
-      font-family: "鸿雷板书简体-测试版";
+      font-family: "鸿雷板书简体-测试版", "宋体", "微软雅黑", inherit;
       font-size: .5rem;
       background: rgba(255,255,255,0.2);
       color: white;
