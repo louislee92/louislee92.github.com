@@ -1,26 +1,16 @@
 <template>
   <div class="wrapper">
     <!-- 动态背景 -->
-    <div class="back-flash"></div>
+<!--    <div class="back-flash"></div>-->
     <!-- 中部菜单 -->
     <div class="center">
       <div class="title">现世通行</div>
       <div class="line3">GO THROUGH THE LAND</div>
       <div class="line1">东方Project同人社团</div>
-      <div class="center-menu">
-        <div class="card" v-for="(item, index) in menus" @click="clickOnItem(item.id)">
-          <div class="box">
-            <div class="img-box">
-              <img :src="`https://img.paulzzh.tech/touhou/random?proxy=1&random=${item.id}`" alt="">
-            </div>
-            <div class="con-box">
-              <div>
-                <h2>{{item.title}}</h2>
-                <p>{{item.detail}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="menu">
+        <span class="menu-item" @click="selectMenu('game')">游戏</span>
+        <span class="menu-item" @click="selectMenu('blog')">博客</span>
+        <span class="menu-item" @click="selectMenu('work')">作品</span>
       </div>
       <div class="line1">不科学现象文化研究讨论会</div>
       <div class="line1" style="padding-bottom: .2rem;">FROM 2021</div>
@@ -35,11 +25,6 @@ export default {
   name: 'Home',
   data() {
     return {
-      menus: [
-        {id: 'game', title: '游戏', detail: '社团同名桌游：现世通行'},
-        {id: 'work', title: '作品', detail: '篆刻闲章、手写折扇、钥匙扣等周边'},
-        {id: 'blog', title: '博客', detail: '社团相关资讯和社团动态'},
-      ]
     }
   },
   mounted() {
@@ -49,13 +34,15 @@ export default {
   computed: {
   },
   methods: {
-    clickOnItem(id) {
+    selectMenu(id) {
       if(id == 'blog') {
         window.location.href = "http://blog.xstx.fun"
       }
       else if(id == 'game') {
-        this.$router.push({path: '/game'});
+        // this.$router.push({path: '/game'});
+        window.location.href = "http://game.xstx.fun"
       }
+
     }
   },
   destroyed() {
@@ -100,90 +87,26 @@ export default {
       transition: .4s all;
     }
   }
-  .center-menu {
+  .menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
 
-    .card{
-      /* 相对定位 */
-      position: relative;
-      width: 320px;
-      height: 320px;
-      margin: 20px;
-      /* 开启3D效果 */
-      transform-style: preserve-3d;
-      perspective: 1000px;
-    }
-    .card .box{
-      /* 绝对定位 */
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform-style: preserve-3d;
-      /* 设置过渡 */
-      transition: 1s ease;
-    }
-    .card .box .img-box{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    .card .box .img-box img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .card .box .con-box{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #333;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* 隐藏旋转div元素的背面 */
-      backface-visibility: hidden;
-      transform-style: preserve-3d;
-      /* 默认沿Y轴旋转180度 */
-      transform: rotateY(180deg);
-    }
-    .card .box .con-box div{
-      transform-style: preserve-3d;
-      padding: 20px;
-      color: #fff;
-      /* 渐变背景 */
-      background: linear-gradient(30deg,#514a9d,#24c6dc);
-      /* 默认沿Z轴偏移100px */
-      transform: translateZ(100px);
-      box-shadow: 0 0 .3rem #514a9d;
-      border-radius: .1rem;
-      animation: linear infinite flash2 5s;
-      transition: 2s all;
+    .menu-item:not(:last-child) {margin-right: .1rem;}
+    .menu-item {
+      border-radius: 0;
+      padding: .05rem .1rem;
+      font-family: "鸿雷板书简体-测试版";
+      font-size: .5rem;
+      background: rgba(255,255,255,0.2);
+      color: white;
+      transition: all .3s;
       cursor: pointer;
       &:hover {
-        border-radius: 2rem;
+        background: rgba(255,255,255,0.8);
+        color: black;
+        border-radius: .5rem;
       }
-    }
-    .card .box .con-box div h2{
-      font-size: 20px;
-      letter-spacing: 1px;
-    }
-    .card .box .con-box div p{
-      margin-top: 5px;
-      font-size: 15px;
-      text-align: justify;
-    }
-    .card:hover .box{
-      /* 鼠标移入，盒子旋转180度 */
-      transform: rotateY(180deg);
     }
   }
   .line1 {

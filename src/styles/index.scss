@@ -29,10 +29,8 @@ html {
 // 导入其他样式
 @import "const";    // 常量
 @import "elem";     // 自定义element ui样式
-@import "base-layout";     // 基础组件
-@import "base-text";
+@import "base-layout";     // 基础组件：布局、响应式等
+@import "base-text";      // 字体
 @import "base-form";      // 基础表单
 @import "base-button";    // 基础按钮
-
-
 
