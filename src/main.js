@@ -4,6 +4,7 @@ import Vue from 'vue'
 // import $ from 'jquery'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import Viewer from "v-viewer";
 import 'viewerjs/dist/viewer.css'
 import App from './App'
 import router from './router'
@@ -13,6 +14,7 @@ import store from "./store";
 import bus from './api/bus'
 
 Vue.use(ElementUI)
+Vue.use(Viewer)
 
 Vue.config.productionTip = false
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="home-wrapper">
     <!-- 动态背景 -->
 <!--    <div class="back-flash"></div>-->
     <!-- 中部菜单 -->
@@ -42,7 +42,9 @@ export default {
         // this.$router.push({path: '/game'});
         window.location.href = "http://game.xstx.fun"
       }
-
+      else if(id == "work") {
+        this.$router.push({path: '/work'});
+      }
     }
   },
   destroyed() {
@@ -53,7 +55,8 @@ export default {
 
 
 <style lang="scss" scoped>
-.wrapper {
+@import "../styles/const";
+.home-wrapper {
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -95,9 +98,10 @@ export default {
     .menu-item:not(:last-child) {margin-right: .1rem;}
     .menu-item {
       border-radius: 0;
-      padding: .05rem .1rem;
-      font-family: "鸿雷板书简体-测试版", "宋体", "微软雅黑", inherit;
+      padding: .1rem .15rem;
+      font-family: $--font-family-honglei;
       font-size: .5rem;
+      font-weight: bold;
       background: rgba(255,255,255,0.2);
       color: white;
       transition: all .3s;
@@ -106,6 +110,7 @@ export default {
         background: rgba(255,255,255,0.8);
         color: black;
         border-radius: .5rem;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
       }
     }
   }
