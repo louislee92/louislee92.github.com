@@ -124,8 +124,8 @@ export default {
     }
     .shop {
       position: absolute;
-      bottom: -.3rem; left: 0; right: 0;
-      height: .3rem;
+      bottom: -.4rem; left: 0; right: 0;
+      height: .4rem;
       display: flex; align-items: center;justify-content: center;
       transition: all .2s;
     }
