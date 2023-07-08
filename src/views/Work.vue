@@ -38,6 +38,12 @@ export default {
         {name: '《现世通行》简装版', desc: '扑克蓝芯纸材质，简装方便，价格实惠',
           category: "桌游", shop: {name: '囧店链接', url: "https://item.taobao.com/item.htm?id=651108429543"},
           image: require("../assets/img/xstx-pkb.png")},
+        {name: '《现世通行》普通版', desc: '21年武汉THO场贩版本',
+          category: "桌游",
+          image: require("../assets/img/xstx-ptb.jpg")},
+        {name: '篆刻', desc: '纯手工篆刻，以有形的文字传达无形的意境，为世间所有的美好留下独一无二的印记',
+          category: "篆刻",
+          image: require("../assets/img/zk1.jpg")},
       ]
     }
   },
@@ -106,11 +112,9 @@ export default {
     .name {
       font-weight: bold;
       margin-bottom: .1rem;
-      font-family: $--font-family-honglei;
     }
     .desc {
       font-size: 80%;
-      font-family: $--font-family-honglei;
     }
 
     .category {
@@ -119,8 +123,10 @@ export default {
       padding: .05rem .1rem;
       padding-right: .2rem;
       background: rgba(255,255,255,0.2);
+      background: black;
       border-bottom-right-radius: 1rem;
-      font-size: 80%;
+      //font-size: 80%;
+      font-family: $--font-family-honglei;
     }
     .shop {
       position: absolute;
