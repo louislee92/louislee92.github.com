@@ -41,6 +41,7 @@ export default {
       else if(id == 'game') {
         // this.$router.push({path: '/game'});
         window.location.href = "http://game.xstx.fun"
+        // 跳转到
       }
       else if(id == "work") {
         this.$router.push({path: '/work'});
