@@ -2,6 +2,10 @@
 //  font-family: "鸿雷板书简体";
 //  src: url("../assets/font/鸿雷板书简体-测试版.ttf") format("truetype");
 //}
+@font-face {
+  font-family: "阿里妈妈刀隶体";
+  src: url("../assets/font/AlimamaDaoLiTi/sub1/38mef01p3fbu.woff2") format("truetype");
+}
 
 body {
   font-size: $--font-size-normal;

@@ -103,7 +103,7 @@ export default {
       padding: .1rem .15rem;
       font-family: $--font-family-honglei;
       font-size: .5rem;
-      font-weight: bold;
+      //font-weight: bold;
       background: rgba(255,255,255,0.2);
       color: white;
       transition: all .3s;
@@ -111,7 +111,7 @@ export default {
       &:hover {
         background: rgba(255,255,255,0.8);
         color: black;
-        border-radius: .5rem;
+        border-radius: .05rem;
         text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
       }
     }
