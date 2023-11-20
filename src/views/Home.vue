@@ -41,7 +41,7 @@ export default {
       else if(id == 'game') {
         // this.$router.push({path: '/game'});
         // window.location.href = "http://game.xstx.fun"
-        window.location.href = "http://xstx.fun/AssetBundles/Android/gtl-0.5.0%20.apk";
+        window.location.href = "http://xstx.fun/AssetBundles/Android/gtl-0.6.0%20.apk";
         // 跳转到
       }
       else if(id == "work") {
