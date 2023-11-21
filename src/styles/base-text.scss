@@ -16,3 +16,7 @@ a {
   color: inherit;
   cursor: pointer;
 }
+
+.bg-blur {
+  filter: blur(.05rem);
+}

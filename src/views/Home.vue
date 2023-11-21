@@ -15,14 +15,20 @@
       <div class="line1">不科学现象文化研究讨论会</div>
       <div class="line1" style="padding-bottom: .2rem;">FROM 2021</div>
     </div>
+    <game ref="gameRef"></game>
+    <work ref="workRef"></work>
   </div>
 </template>
 
 <script>
 import {mapActions, mapGetters, mapState, mapMutations} from "vuex";
 import particles from "../libs/particle-lines/particles";
+import Game from './Game'
+import Work from "./Work";
+
 export default {
   name: 'Home',
+  components: {Work, Game},
   data() {
     return {
     }
@@ -39,13 +45,10 @@ export default {
         window.location.href = "http://blog.xstx.fun"
       }
       else if(id == 'game') {
-        // this.$router.push({path: '/game'});
-        // window.location.href = "http://game.xstx.fun"
-        window.location.href = "http://" + window.location.host + "/AssetBundles/Android/gtl-0.6.0.apk";
-        // 跳转到
+        this.$refs.gameRef.show();
       }
       else if(id == "work") {
-        this.$router.push({path: '/work'});
+        this.$refs.workRef.show();
       }
     }
   },
@@ -61,7 +64,8 @@ export default {
 .home-wrapper {
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
+  position: relative;
 
   .back-flash {
     height: 150%;
