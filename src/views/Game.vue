@@ -2,7 +2,7 @@
   <my-dialog ref="MyDialogRef">
     <div class="view-game">
       <h1>现世通行OL安卓APP免费下载</h1>
-      <div>
+      <div style="text-align: center">
         <img class="download-img download" title="点击下载APP"
              @click="download"
              src="http://backup.xstx.fun:280/download/%E3%80%90%E5%B9%BF%E5%91%8A%E5%AE%A3%E5%8F%91%E3%80%91xstx-app-logo.png">

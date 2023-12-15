@@ -31,13 +31,13 @@ export default {
     return {
       works: [
         {name: '《现世通行》桌游', desc: '毛线传教聚会小游戏',
-          category: "桌游", shop: {name: '囧店链接', url: "https://item.taobao.com/item.htm?id=651108429543"},
+          category: "桌游", shop: {name: '淘宝链接', url: "https://item.taobao.com/item.htm?id=643184451728"},
           image: "http://backup.xstx.fun:280/download/%E3%80%90%E5%B9%BF%E5%91%8A%E5%AE%A3%E5%8F%91%E3%80%91%E5%9B%A7%E5%BA%97%E7%8E%B0%E4%B8%96%E9%80%9A%E8%A1%8C%E6%A1%8C%E6%B8%B8%E5%AE%A3%E5%8F%91.jpg"},
         {name: '《现世通行》简装版', desc: '方便携带，价格实惠',
-          category: "桌游", shop: {name: '囧店链接', url: "https://item.taobao.com/item.htm?id=651108429543"},
+          category: "桌游", shop: {name: '淘宝链接', url: "https://item.taobao.com/item.htm?id=643184451728"},
           image: require("../assets/img/xstx-pkb.png")},
         {name: '篆刻', desc: '纯手工篆刻，以有形的文字传达无形的意境，为世间所有的美好留下独一无二的印记',
-          category: "篆刻", shop: {name: '官方连接', url: "https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w4004-23620662481.6.381323f4BOlwbm&id=735016407903"},
+          category: "篆刻", shop: {name: '定制连接', url: "https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w4004-23620662481.6.381323f4BOlwbm&id=735016407903"},
           image: require("../assets/img/zk1.jpg")},
       ]
     }
